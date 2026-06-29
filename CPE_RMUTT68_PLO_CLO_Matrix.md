@@ -8,7 +8,7 @@
 
 ตารางนี้แสดงความสัมพันธ์ระหว่าง CLOs ของแต่ละรายวิชากับ PLOs ระดับหลักสูตร (● = มีความสัมพันธ์)
 
-| รหัส | ชื่อรายวิชา | CLO | ผลลัพธ์การเรียนรู้ | [PLO1](CPE_RMUTT68_Prospectus.md) | [PLO2](CPE_RMUTT68_Prospectus.md) | [PLO3](CPE_RMUTT68_Prospectus.md) | [PLO4](CPE_RMUTT68_Prospectus.md) | [PLO5](CPE_RMUTT68_Prospectus.md) | [PLO6](CPE_RMUTT68_Prospectus.md) | [PLO7](CPE_RMUTT68_Prospectus.md) | [PLO8](CPE_RMUTT68_Prospectus.md) |
+| รหัส | ชื่อรายวิชา | CLO | ผลลัพธ์การเรียนรู้ | [PLO1](CPE_RMUTT68_Prospectus.md#plo1) | [PLO2](CPE_RMUTT68_Prospectus.md#plo2) | [PLO3](CPE_RMUTT68_Prospectus.md#plo3) | [PLO4](CPE_RMUTT68_Prospectus.md#plo4) | [PLO5](CPE_RMUTT68_Prospectus.md#plo5) | [PLO6](CPE_RMUTT68_Prospectus.md#plo6) | [PLO7](CPE_RMUTT68_Prospectus.md#plo7) | [PLO8](CPE_RMUTT68_Prospectus.md#plo8) |
 | --- | --- | --- | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [04-620-201](courses/foundation/04_620_201.md) | ปฏิบัติการควบคุมเวอร์ชัน | CLO1 | สามารถประยุกต์ใช้งานคำสั่งพื้นฐานลินุกซ์และเชลล์สคริปต์ได้ |  | ● |  |  |  |  |  |  |
 | | | CLO2 | สามารถประยุกต์ใช้งานคำสั่งพื้นฐานการควบคุมเวอร์ชันได้ |  | ● |  |  |  |  |  |  |
