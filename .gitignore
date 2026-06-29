@@ -1,0 +1,16 @@
+# IDE
+.idea/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Source documents (raw/binary originals)
+source_documents/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp / scratch
+*.tmp
+*.log
