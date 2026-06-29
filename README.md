@@ -12,6 +12,19 @@
 
 ---
 
+## ลิงก์หลัก | Quick Links
+
+| ไฟล์ | รายละเอียด |
+| --- | --- |
+| [CPE_RMUTT68_Prospectus.md](CPE_RMUTT68_Prospectus.md) | ข้อมูลหลักสูตรสำหรับนักศึกษา — PLOs, แผนการศึกษา, รายวิชา |
+| [CPE_RMUTT68_PLO_CLO_Matrix.md](CPE_RMUTT68_PLO_CLO_Matrix.md) | ตารางแมป PLO–CLO ทุกรายวิชา (64 วิชา) |
+| [courses/foundation/](courses/foundation/) | กลุ่มวิชาพื้นฐาน — 11 วิชา |
+| [courses/core/](courses/core/) | กลุ่มวิชาบังคับ — 14 วิชา |
+| [courses/electives/](courses/electives/) | กลุ่มวิชาเลือก — 33 วิชา (4 กลุ่ม) |
+| [courses/cwie/](courses/cwie/) | กลุ่มเสริมสร้างประสบการณ์วิชาชีพ — 6 วิชา |
+
+---
+
 ## โครงสร้างไฟล์ | Repository Structure
 
 ```
