@@ -55,6 +55,17 @@ prerequisites: [04-621-101]
 
 ---
 
+## การแมป TABEE PO | TABEE PO Mapping
+
+ตารางแสดงความสัมพันธ์ระหว่าง PLO ของรายวิชานี้กับ TABEE Program Outcomes (PO) ตาม Sydney Accord อ้างอิงจาก [CPE_RMUTT68_TABEE_PO_Mapping.md](../../CPE_RMUTT68_TABEE_PO_Mapping.md)
+
+| PLO | PLO1 | PLO2 | PLO3 | PLO4 | PLO5 | PLO6 | PLO7 | PLO8 |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| รายวิชา | ● | ● |  | ● |  | ● |  |  |
+| TABEE PO | PO1 | PO3 | PO8 | PO2, PO4 | PO5 | PO9 | PO11 | PO6, PO7, PO10 |
+
+---
+
 ## แผนการประเมิน | Assessment Plan
 
 | การประเมิน | น้ำหนัก (%) | CLOs ที่ครอบคลุม |
