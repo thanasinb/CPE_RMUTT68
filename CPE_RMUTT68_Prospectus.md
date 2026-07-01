@@ -53,7 +53,7 @@
 | <a id="plo7"></a>PLO7 | อธิบายและประยุกต์ใช้เทคโนโลยีทางวิศวกรรมคอมพิวเตอร์ที่ไม่เคยเรียนในหลักสูตรได้ | C |
 | <a id="plo8"></a>PLO8 | ทำงานเป็นทีม วางแผนและบริหารจัดการงานที่ได้รับมอบหมาย สื่อสารความคืบหน้าและปัญหาได้ตรงประเด็น และเสนอแนวทางแก้ไขพร้อมเหตุผลรองรับได้ | C |
 
-→ ดูการแมป PLO–CLO ทุกรายวิชา: [CPE_RMUTT68_PLO_CLO_Matrix.md](CPE_RMUTT68_PLO_CLO_Matrix.md) | PLO เวอร์ชันเดิม: [Old_PLO.md](Old_PLO.md)
+→ ดูการแมป PLO–CLO ทุกรายวิชา: [CPE_RMUTT68_PLO_CLO_Matrix.md](CPE_RMUTT68_PLO_CLO_Matrix.md) | ดูการแมป TABEE PO–PLO: [CPE_RMUTT68_TABEE_PO_Mapping.md](CPE_RMUTT68_TABEE_PO_Mapping.md) | PLO เวอร์ชันเดิม: [Old_PLO.md](Old_PLO.md)
 
 ---
 
