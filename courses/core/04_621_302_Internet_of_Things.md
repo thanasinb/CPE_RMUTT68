@@ -57,14 +57,14 @@ prerequisites: [04-621-204]
 
 ---
 
-## การแมป TABEE PO | TABEE PO Mapping
+## Mapping TABEE PO กับ PLO ของหลักสูตร
 
 ตารางแสดงความสัมพันธ์ระหว่าง PLO ของรายวิชานี้กับ TABEE Program Outcomes (PO) ตาม Sydney Accord อ้างอิงจาก [CPE_RMUTT68_TABEE_PO_Mapping.md](../../CPE_RMUTT68_TABEE_PO_Mapping.md)
 
-| PLO | PLO1 | PLO2 | PLO3 | PLO4 | PLO5 | PLO6 | PLO7 | PLO8 |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| รายวิชา |  | ● | ● | ● | ● |  | ● | ● |
-| TABEE PO | PO1 | PO3 | PO8 | PO2, PO4 | PO5 | PO9 | PO11 | PO6, PO7, PO10 |
+| PLO ที่เกี่ยวข้อง | PLO1 | PLO4 | PLO2 | PLO4 | PLO5 | PLO8 | PLO8 | PLO3 | PLO6 | PLO8 | PLO7 |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| รายวิชา |  | ● | ● | ● | ● | ● | ● | ● |  | ● | ● |
+| TABEE PO | PO1 | PO2 | PO3 | PO4 | PO5 | PO6 | PO7 | PO8 | PO9 | PO10 | PO11 |
 
 ---
 
