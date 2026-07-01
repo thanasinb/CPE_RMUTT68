@@ -1,0 +1,70 @@
+---
+code: 04-622-302
+name_th: วิศวกรรมซอฟต์แวร์
+name_en: Software Engineering
+credits: 3(2-3)
+type: กลุ่มวิชาบังคับ
+year: 3
+semester: 2
+plos: PLO1, PLO2, PLO4, PLO5, PLO6
+prerequisites: [04-622-202, 04-622-203]
+---
+
+> [Prospectus](../../CPE_RMUTT68_Prospectus.md) · [PLO–CLO Matrix](../../CPE_RMUTT68_PLO_CLO_Matrix.md) · กลุ่มวิชาบังคับ
+
+---
+
+# 04-622-302 วิศวกรรมซอฟต์แวร์
+## Software Engineering | 3(2-3)
+
+**ประเภท:** กลุ่มวิชาบังคับ | **ชั้นปี:** 3 | **ภาคการศึกษา:** 2
+
+**วิชาบังคับก่อน | Prerequisites:** [04-622-202 ระบบฐานข้อมูล (Database System)](../foundation/04_622_202_Database_System.md), [04-622-203 การเขียนโปรแกรมเชิงวัตถุ (Object-Oriented Programming)](04_622_203_Object-Oriented_Programming.md)
+
+---
+
+## คำอธิบายรายวิชา | Course Description
+
+ความสำคัญของเทคโนโลยีสารสนเทศ กระบวนการพัฒนาซอฟต์แวร์ การบริหารโครงการซอฟต์แวร์ ข้อกำหนดทางซอฟต์แวร์ การวิเคราะห์และออกแบบระบบเชิงโครงสร้าง การวิเคราะห์และออกแบบระบบเชิงวัตถุ การจำลองระบบ การออกแบบส่วนติดต่อผู้ใช้งาน การออกแบบอินพุตและเอาต์พุต การทดสอบซอฟต์แวร์ / Importance of information technology; software development process; software project management; software specifications; structural system analysis and design; object-oriented system analysis and design; system modeling; user interface design; input and output design; software testing
+
+---
+
+## ผลลัพธ์การเรียนรู้รายวิชา | Course Learning Outcomes (CLOs)
+
+| CLO | ผลลัพธ์การเรียนรู้ | PLOs |
+| --- | --- | --- |
+| CLO1 | อธิบายความสำคัญของเทคโนโลยีสารสนเทศต่อองค์กรและระบบธุรกิจได้ | [PLO1](../../CPE_RMUTT68_Prospectus.md#plo1) |
+| CLO2 | อธิบายขั้นตอนและกิจกรรมในแต่ละขั้นตอนของการพัฒนาระบบได้ | [PLO1](../../CPE_RMUTT68_Prospectus.md#plo1) |
+| CLO3 | ออกแบบระบบสารสนเทศเพื่อตอบสนองความต้องการทางธุรกิจได้ | [PLO2](../../CPE_RMUTT68_Prospectus.md#plo2) |
+| CLO4 | วิเคราะห์ระบบงานและความต้องการของระบบ เพื่อสร้างความได้เปรียบทางธุรกิจโดยใช้เทคโนโลยีสารสนเทศได้ | [PLO4](../../CPE_RMUTT68_Prospectus.md#plo4) |
+| CLO5 | นำเสนอกระบวนการทำงานของระบบและข้อมูลที่เกี่ยวข้องเป็นแผนภาพได้ | [PLO5](../../CPE_RMUTT68_Prospectus.md#plo5) |
+| CLO6 | ส่งงานที่มอบหมายตามกำหนด และปฏิบัติตามข้อตกลงของวิชา | [PLO6](../../CPE_RMUTT68_Prospectus.md#plo6) |
+
+---
+
+## การแมปผลลัพธ์การเรียนรู้ | PLO Mapping
+
+> PLO definitions → [Prospectus](../../CPE_RMUTT68_Prospectus.md#plos) | ภาพรวมทุกรายวิชา → [PLO–CLO Matrix](../../CPE_RMUTT68_PLO_CLO_Matrix.md)
+
+| CLO | [PLO1](../../CPE_RMUTT68_Prospectus.md#plo1) | [PLO2](../../CPE_RMUTT68_Prospectus.md#plo2) | [PLO3](../../CPE_RMUTT68_Prospectus.md#plo3) | [PLO4](../../CPE_RMUTT68_Prospectus.md#plo4) | [PLO5](../../CPE_RMUTT68_Prospectus.md#plo5) | [PLO6](../../CPE_RMUTT68_Prospectus.md#plo6) | [PLO7](../../CPE_RMUTT68_Prospectus.md#plo7) | [PLO8](../../CPE_RMUTT68_Prospectus.md#plo8) |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| CLO1 | ● |  |  |  |  |  |  |  |
+| CLO2 | ● |  |  |  |  |  |  |  |
+| CLO3 |  | ● |  |  |  |  |  |  |
+| CLO4 |  |  |  | ● |  |  |  |  |
+| CLO5 |  |  |  |  | ● |  |  |  |
+| CLO6 |  |  |  |  |  | ● |  |  |
+
+---
+
+## แผนการประเมิน | Assessment Plan
+
+| การประเมิน | น้ำหนัก (%) | CLOs ที่ครอบคลุม |
+| --- | --- | --- |
+| *(ยังไม่ได้กรอก)* | | |
+
+---
+
+## หมายเหตุ | Notes
+
+*(สำหรับอาจารย์ผู้สอน: บันทึกข้อสังเกต การปรับปรุง หรือข้อมูลเพิ่มเติม)*

@@ -1,0 +1,66 @@
+---
+code: 04-621-402
+name_th: อินเตอร์เน็ตของสรรพสิ่งสำหรับอุตสาหกรรม
+name_en: Industrial Internet of Things
+credits: 3(2-3)
+type: กลุ่มวิชาเลือก
+year: N/A (elective)
+semester: N/A
+plos: PLO2, PLO4, PLO5, PLO6
+prerequisites: [04-621-302]
+---
+
+> [Prospectus](../../../CPE_RMUTT68_Prospectus.md) · [PLO–CLO Matrix](../../../CPE_RMUTT68_PLO_CLO_Matrix.md) · กลุ่มวิชาเลือก — ฮาร์ดแวร์และสถาปัตยกรรม
+
+---
+
+# 04-621-402 อินเตอร์เน็ตของสรรพสิ่งสำหรับอุตสาหกรรม
+## Industrial Internet of Things | 3(2-3)
+
+**ประเภท:** กลุ่มวิชาเลือก | **ชั้นปี:** N/A (elective) | **ภาคการศึกษา:** N/A
+
+**วิชาบังคับก่อน | Prerequisites:** [04-621-302 อินเตอร์เน็ตของสรรพสิ่ง (Internet of Things)](../../core/04_621_302_Internet_of_Things.md)
+
+---
+
+## คำอธิบายรายวิชา | Course Description
+
+หลักการอินเทอร์เน็ตของสรรพสิ่งและอินเทอร์เน็ตของสรรพสิ่งสำหรับอุตสาหกรรม สถาปัตยกรรมการเชื่อมประสานกับอุปกรณ์เซ็นเซอร์และตัวขับเคลื่อน การสื่อสารข้อมูลและโครงข่าย ความปลอดภัย มั่นคง ระบบนิเวศและแพลตฟอร์ม การบูรณาการข้อมูลและการวิเคราะห์ การแสดงภาพ / Fundamental of industrial internet of things; architecture; sensors and actuators interfacing; data communications and networking; safety and security; ecosystem and platforms; data integration and analytics; visualization
+
+---
+
+## ผลลัพธ์การเรียนรู้รายวิชา | Course Learning Outcomes (CLOs)
+
+| CLO | ผลลัพธ์การเรียนรู้ | PLOs |
+| --- | --- | --- |
+| CLO1 | สามารถอธิบายและประยุกต์ใช้ สถาปัตยกรรม การเชื่อมประสานอุปกรณ์ เซ็นเซอร์ ตัวขับเคลื่อนและการสื่อสารข้อมูลและโครงข่าย ของอินเทอร์เน็ตของสรรพสิ่งสำหรับอุตสาหกรรมได้ | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
+| CLO2 | สามารถวิเคราะห์ ออกแบบ ใช้งานระบบอินเตอร์เน็ตของสรรพสิ่งสำหรับอุตสาหกรรม ได้อย่างเป็นระบบ และแก้ปัญหาตามโจทย์ที่กำหนดได้ | [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4) |
+| CLO3 | สามารถใช้เครื่องมือและซอฟต์แวร์พัฒนาระบบ อินเตอร์เน็ตของสรรพสิ่งสำหรับอุตสาหกรรมได้อย่างเหมาะสม | [PLO5](../../../CPE_RMUTT68_Prospectus.md#plo5) |
+| CLO4 | แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา | [PLO6](../../../CPE_RMUTT68_Prospectus.md#plo6) |
+
+---
+
+## การแมปผลลัพธ์การเรียนรู้ | PLO Mapping
+
+> PLO definitions → [Prospectus](../../../CPE_RMUTT68_Prospectus.md#plos) | ภาพรวมทุกรายวิชา → [PLO–CLO Matrix](../../../CPE_RMUTT68_PLO_CLO_Matrix.md)
+
+| CLO | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) | [PLO3](../../../CPE_RMUTT68_Prospectus.md#plo3) | [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4) | [PLO5](../../../CPE_RMUTT68_Prospectus.md#plo5) | [PLO6](../../../CPE_RMUTT68_Prospectus.md#plo6) | [PLO7](../../../CPE_RMUTT68_Prospectus.md#plo7) | [PLO8](../../../CPE_RMUTT68_Prospectus.md#plo8) |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| CLO1 |  | ● |  |  |  |  |  |  |
+| CLO2 |  |  |  | ● |  |  |  |  |
+| CLO3 |  |  |  |  | ● |  |  |  |
+| CLO4 |  |  |  |  |  | ● |  |  |
+
+---
+
+## แผนการประเมิน | Assessment Plan
+
+| การประเมิน | น้ำหนัก (%) | CLOs ที่ครอบคลุม |
+| --- | --- | --- |
+| *(ยังไม่ได้กรอก)* | | |
+
+---
+
+## หมายเหตุ | Notes
+
+*(สำหรับอาจารย์ผู้สอน: บันทึกข้อสังเกต การปรับปรุง หรือข้อมูลเพิ่มเติม)*

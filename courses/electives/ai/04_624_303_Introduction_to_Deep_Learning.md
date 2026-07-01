@@ -1,0 +1,70 @@
+---
+code: 04-624-303
+name_th: การเรียนรู้เชิงลึกเบื้องต้น
+name_en: Introduction to Deep Learning
+credits: 3(2-3)
+type: กลุ่มวิชาเลือก
+year: N/A (elective)
+semester: N/A
+plos: PLO1, PLO2, PLO4, PLO6
+prerequisites: [04-622-201]
+---
+
+> [Prospectus](../../../CPE_RMUTT68_Prospectus.md) · [PLO–CLO Matrix](../../../CPE_RMUTT68_PLO_CLO_Matrix.md) · กลุ่มวิชาเลือก — ปัญญาประดิษฐ์
+
+---
+
+# 04-624-303 การเรียนรู้เชิงลึกเบื้องต้น
+## Introduction to Deep Learning | 3(2-3)
+
+**ประเภท:** กลุ่มวิชาเลือก | **ชั้นปี:** N/A (elective) | **ภาคการศึกษา:** N/A
+
+**วิชาบังคับก่อน | Prerequisites:** [04-622-201 โครงสร้างข้อมูลและอัลกอริทึม (Data Structure and Algorithms)](../../foundation/04_622_201_Data_Structure_and_Algorithms.md)
+
+---
+
+## คำอธิบายรายวิชา | Course Description
+
+การเรียนรู้เชิงลึก การสร้างแบบจำลองลำดับเชิงลึก คอมพิวเตอร์วิชันเชิงลึก แบบจำลองการสร้างเชิงลึก การเรียนรู้แบบเสริมแรงเชิงลึก การแสดงผลข้อมูลสำหรับการเรียนรู้ของเครื่อง / Deep learning; deep sequence modeling; deep computer vision; deep generative models; recognition systems; deep reinforcement learning; data visualization for machine learning
+
+---
+
+## ผลลัพธ์การเรียนรู้รายวิชา | Course Learning Outcomes (CLOs)
+
+| CLO | ผลลัพธ์การเรียนรู้ | PLOs |
+| --- | --- | --- |
+| CLO1 | อธิบายแนวคิดในการเรียนรู้เชิงลึก | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) |
+| CLO2 | ใช้เทคนิคการเรียนรู้เชิงลึกกับปัญหาในการสร้างแบบจำลองลำดับเชิงลึก | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
+| CLO3 | ใช้เทคนิคการแสดงผลข้อมูลเพื่อตีความและนำเสนอข้อมูลการเรียนรู้ของเครื่อง | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
+| CLO4 | ออกแบบและใช้งานระบบการรู้จำโดยใช้การเรียนรู้เชิงลึก | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
+| CLO5 | พัฒนาและประยุกต์ใช้โมเดลการเรียนรู้แบบเสริมแรงชิงลึก | [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4) |
+| CLO6 | แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา | [PLO6](../../../CPE_RMUTT68_Prospectus.md#plo6) |
+
+---
+
+## การแมปผลลัพธ์การเรียนรู้ | PLO Mapping
+
+> PLO definitions → [Prospectus](../../../CPE_RMUTT68_Prospectus.md#plos) | ภาพรวมทุกรายวิชา → [PLO–CLO Matrix](../../../CPE_RMUTT68_PLO_CLO_Matrix.md)
+
+| CLO | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) | [PLO3](../../../CPE_RMUTT68_Prospectus.md#plo3) | [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4) | [PLO5](../../../CPE_RMUTT68_Prospectus.md#plo5) | [PLO6](../../../CPE_RMUTT68_Prospectus.md#plo6) | [PLO7](../../../CPE_RMUTT68_Prospectus.md#plo7) | [PLO8](../../../CPE_RMUTT68_Prospectus.md#plo8) |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| CLO1 | ● |  |  |  |  |  |  |  |
+| CLO2 |  | ● |  |  |  |  |  |  |
+| CLO3 |  | ● |  |  |  |  |  |  |
+| CLO4 |  | ● |  |  |  |  |  |  |
+| CLO5 |  |  |  | ● |  |  |  |  |
+| CLO6 |  |  |  |  |  | ● |  |  |
+
+---
+
+## แผนการประเมิน | Assessment Plan
+
+| การประเมิน | น้ำหนัก (%) | CLOs ที่ครอบคลุม |
+| --- | --- | --- |
+| *(ยังไม่ได้กรอก)* | | |
+
+---
+
+## หมายเหตุ | Notes
+
+*(สำหรับอาจารย์ผู้สอน: บันทึกข้อสังเกต การปรับปรุง หรือข้อมูลเพิ่มเติม)*

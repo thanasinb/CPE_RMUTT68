@@ -1,0 +1,68 @@
+---
+code: 04-621-403
+name_th: การออกแบบวงจรรวมแอนะล็อก
+name_en: Analog Integrated Circuit Design
+credits: 3(2-3)
+type: กลุ่มวิชาเลือก
+year: N/A (elective)
+semester: N/A
+plos: PLO1, PLO2, PLO4, PLO5, PLO6
+prerequisites: [04-621-202]
+---
+
+> [Prospectus](../../../CPE_RMUTT68_Prospectus.md) · [PLO–CLO Matrix](../../../CPE_RMUTT68_PLO_CLO_Matrix.md) · กลุ่มวิชาเลือก — ฮาร์ดแวร์และสถาปัตยกรรม
+
+---
+
+# 04-621-403 การออกแบบวงจรรวมแอนะล็อก
+## Analog Integrated Circuit Design | 3(2-3)
+
+**ประเภท:** กลุ่มวิชาเลือก | **ชั้นปี:** N/A (elective) | **ภาคการศึกษา:** N/A
+
+**วิชาบังคับก่อน | Prerequisites:** [04-621-202 วงจรอิเล็กทรอนิกส์สำหรับวิศวกรรมคอมพิวเตอร์ (Electronics Circuits for Computer Engineering)](../../foundation/04_621_202_Electronics_Circuits_for_Computer_Engineering.md)
+
+---
+
+## คำอธิบายรายวิชา | Course Description
+
+หลักการทรานซิสเตอร์มอส พื้นที่การทำงาน แบบจำลองอย่างง่าย ผลกระทบจากการทำงานจริง ตัวจำลองกระแส ตัวขยายขั้นเดียว ตัวขยายความต่าง การตอบสนองความถี่ การป้อนกลับ ออปแอมป์ การวิเคราะห์สัญญาณรบกวน การวิเคราะห์กระแสตรง กระแสสลับ และเชิงเวลา กระบวนการผลิตซีมอส ขั้นตอนการออกแบบวงจรรวมซีมอสแบบแอนะล็อก / MOS transistor fundamental; regions of operation; simplified model; second-order effects; current mirrors; single stage amplifiers; differential amplifiers; frequency response; feedback; Opamps; noise analysis; DC, AC and transient analysis; CMOS fabrication process; analog CMOS IC design flow
+
+---
+
+## ผลลัพธ์การเรียนรู้รายวิชา | Course Learning Outcomes (CLOs)
+
+| CLO | ผลลัพธ์การเรียนรู้ | PLOs |
+| --- | --- | --- |
+| CLO1 | สามารถอธิบายหลักการของสารกึ่งตัวนำ อธิบายกระบวนการผลิต หลักการทำงานของทรานซิสเตอร์มอส และขั้นตอนการออกแบบวงจรรวมได้ | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) |
+| CLO2 | สามารถประยุกต์ใช้หลักการของทรานซิสเตอร์ในการออกแบบวงจรตัวจำลองกระแส ตัวขยายขั้นเดียว ตัวขยายความต่าง การตอบสนองความถี่ การป้อนกลับ ออปแอมป์ได้ | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
+| CLO3 | สามารถวิเคราะห์การตอบสนองสภาวะคงตัวและการตอบสนองเชิงเวลาได้ | [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4) |
+| CLO4 | สามารถใช้เครื่องมือที่เกี่ยวข้องกับการออกแบบวงจรรวมอนาล็อกได้ | [PLO5](../../../CPE_RMUTT68_Prospectus.md#plo5) |
+| CLO5 | แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา | [PLO6](../../../CPE_RMUTT68_Prospectus.md#plo6) |
+
+---
+
+## การแมปผลลัพธ์การเรียนรู้ | PLO Mapping
+
+> PLO definitions → [Prospectus](../../../CPE_RMUTT68_Prospectus.md#plos) | ภาพรวมทุกรายวิชา → [PLO–CLO Matrix](../../../CPE_RMUTT68_PLO_CLO_Matrix.md)
+
+| CLO | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) | [PLO3](../../../CPE_RMUTT68_Prospectus.md#plo3) | [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4) | [PLO5](../../../CPE_RMUTT68_Prospectus.md#plo5) | [PLO6](../../../CPE_RMUTT68_Prospectus.md#plo6) | [PLO7](../../../CPE_RMUTT68_Prospectus.md#plo7) | [PLO8](../../../CPE_RMUTT68_Prospectus.md#plo8) |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| CLO1 | ● |  |  |  |  |  |  |  |
+| CLO2 |  | ● |  |  |  |  |  |  |
+| CLO3 |  |  |  | ● |  |  |  |  |
+| CLO4 |  |  |  |  | ● |  |  |  |
+| CLO5 |  |  |  |  |  | ● |  |  |
+
+---
+
+## แผนการประเมิน | Assessment Plan
+
+| การประเมิน | น้ำหนัก (%) | CLOs ที่ครอบคลุม |
+| --- | --- | --- |
+| *(ยังไม่ได้กรอก)* | | |
+
+---
+
+## หมายเหตุ | Notes
+
+*(สำหรับอาจารย์ผู้สอน: บันทึกข้อสังเกต การปรับปรุง หรือข้อมูลเพิ่มเติม)*

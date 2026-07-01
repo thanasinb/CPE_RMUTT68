@@ -115,7 +115,7 @@
 | --- | --- | --- |
 | 01-xxx-xxx | หมวดวิชาศึกษาทั่วไป — กลุ่มวิชาภาษาเพื่อการสื่อสาร (1) | 3(x-x) |
 | 04-411-101 | การฝึกพื้นฐานทางวิศวกรรม / Basic Engineering Training | 3(1-6) |
-| [04-621-101](courses/foundation/04_621_101.md) | การเขียนโปรแกรมคอมพิวเตอร์ / Computer Programming | 3(2-3) |
+| [04-621-101](courses/foundation/04_621_101_Computer_Programming.md) | การเขียนโปรแกรมคอมพิวเตอร์ / Computer Programming | 3(2-3) |
 | 04-711-101 | เคมีสำหรับวิศวกร / Chemistry for Engineers | 3(3-0) |
 | 09-111-141 | แคลคูลัสสำหรับวิศวกร 1 / Calculus for Engineers 1 | 3(3-0) |
 | 09-410-141 | ฟิสิกส์สำหรับวิศวกร 1 / Physics for Engineers 1 | 3(3-0) |
@@ -142,24 +142,24 @@
 | รหัส | ชื่อวิชา | หน่วยกิต |
 | --- | --- | --- |
 | 01-xxx-xxx | หมวดวิชาศึกษาทั่วไป — กลุ่มวิชาภาษาเพื่อการสื่อสาร (3) | 3(x-x) |
-| [04-620-201](courses/foundation/04_620_201.md) | ปฏิบัติการควบคุมเวอร์ชัน / Version Control Laboratory | 1(0-3) |
-| [04-620-202](courses/foundation/04_620_202.md) | ปฏิบัติการโปรแกรมภาษาไพธอน / Python Programming Laboratory | 1(0-3) |
-| [04-621-201](courses/foundation/04_621_201.md) | วงจรไฟฟ้าสำหรับวิศวกรรมคอมพิวเตอร์ / Electrical Circuits for Computer Engineering | 3(2-3) |
-| [04-621-203](courses/foundation/04_621_203.md) | การออกแบบวงจรดิจิทัลและตรรกะ / Digital Circuit and Logic Design | 3(2-3) |
-| [04-622-201](courses/foundation/04_622_201.md) | โครงสร้างข้อมูลและอัลกอริทึม / Data Structure and Algorithms | 3(2-3) |
-| [04-623-201](courses/foundation/04_623_201.md) | การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ / Data Communication and Computer Networking | 3(3-0) |
-| [04-624-201](courses/foundation/04_624_201.md) | ทฤษฎีการคำนวณ / Theory of Computation | 3(3-0) |
+| [04-620-201](courses/foundation/04_620_201_Version_Control_Laboratory.md) | ปฏิบัติการควบคุมเวอร์ชัน / Version Control Laboratory | 1(0-3) |
+| [04-620-202](courses/foundation/04_620_202_Python_Programming_Laboratory.md) | ปฏิบัติการโปรแกรมภาษาไพธอน / Python Programming Laboratory | 1(0-3) |
+| [04-621-201](courses/foundation/04_621_201_Electrical_Circuits_for_Computer_Engineering.md) | วงจรไฟฟ้าสำหรับวิศวกรรมคอมพิวเตอร์ / Electrical Circuits for Computer Engineering | 3(2-3) |
+| [04-621-203](courses/foundation/04_621_203_Digital_Circuit_and_Logic_Design.md) | การออกแบบวงจรดิจิทัลและตรรกะ / Digital Circuit and Logic Design | 3(2-3) |
+| [04-622-201](courses/foundation/04_622_201_Data_Structure_and_Algorithms.md) | โครงสร้างข้อมูลและอัลกอริทึม / Data Structure and Algorithms | 3(2-3) |
+| [04-623-201](courses/foundation/04_623_201_Data_Communication_and_Computer_Networking.md) | การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ / Data Communication and Computer Networking | 3(3-0) |
+| [04-624-201](courses/foundation/04_624_201_Theory_of_Computation.md) | ทฤษฎีการคำนวณ / Theory of Computation | 3(3-0) |
 | **รวม** | | **20** |
 
 ### ชั้นปีที่ 2 / ภาคการศึกษาที่ 2 — 21 หน่วยกิต
 
 | รหัส | ชื่อวิชา | หน่วยกิต |
 | --- | --- | --- |
-| [04-621-202](courses/foundation/04_621_202.md) | วงจรอิเล็กทรอนิกส์สำหรับวิศวกรรมคอมพิวเตอร์ / Electronics Circuits for Computer Engineering | 3(2-3) |
-| [04-621-204](courses/foundation/04_621_204.md) | ไมโครคอนโทรลเลอร์และการเชื่อมต่อ / Microcontroller and Interfacing | 3(2-3) |
-| [04-622-202](courses/foundation/04_622_202.md) | ระบบฐานข้อมูล / Database System | 3(2-3) |
-| [04-622-203](courses/core/04_622_203.md) | การเขียนโปรแกรมเชิงวัตถุ / Object-Oriented Programming | 3(2-3) |
-| [04-623-202](courses/core/04_623_202.md) | ระบบเครือข่ายแบบทีซีพีไอพี / TCP/IP Networks | 3(3-0) |
+| [04-621-202](courses/foundation/04_621_202_Electronics_Circuits_for_Computer_Engineering.md) | วงจรอิเล็กทรอนิกส์สำหรับวิศวกรรมคอมพิวเตอร์ / Electronics Circuits for Computer Engineering | 3(2-3) |
+| [04-621-204](courses/foundation/04_621_204_Microcontroller_and_Interfacing.md) | ไมโครคอนโทรลเลอร์และการเชื่อมต่อ / Microcontroller and Interfacing | 3(2-3) |
+| [04-622-202](courses/foundation/04_622_202_Database_System.md) | ระบบฐานข้อมูล / Database System | 3(2-3) |
+| [04-622-203](courses/core/04_622_203_Object-Oriented_Programming.md) | การเขียนโปรแกรมเชิงวัตถุ / Object-Oriented Programming | 3(2-3) |
+| [04-623-202](courses/core/04_623_202_TCP_IP_Networks.md) | ระบบเครือข่ายแบบทีซีพีไอพี / TCP/IP Networks | 3(3-0) |
 | 04-xxx-xxx | หมวดวิชาเฉพาะ — กลุ่มวิชาเลือก (1) | 3(x-x) |
 | xx-xxx-xxx | หมวดวิชาศึกษาทั่วไป — กลุ่มวิชาเทคโนโลยีและการเสริมสร้างนวัตกรรม (2) | 3(x-x) |
 | **รวม** | | **21** |
@@ -170,11 +170,11 @@
 
 | รหัส | ชื่อวิชา | หน่วยกิต |
 | --- | --- | --- |
-| [04-620-301](courses/core/04_620_301.md) | สัมมนาทางวิศวกรรมคอมพิวเตอร์ / Seminar in Computer Engineering | 1(0-3) |
-| [04-621-301](courses/core/04_621_301.md) | องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์ / Computer Organization and Architecture | 3(3-0) |
-| [04-621-302](courses/core/04_621_302.md) | อินเตอร์เน็ตของสรรพสิ่ง / Internet of Things | 3(2-3) |
-| [04-622-301](courses/core/04_622_301.md) | การพัฒนาเว็บเต็มรูปแบบ / Full-stack Web Development | 3(2-3) |
-| [04-623-301](courses/core/04_623_301.md) | ปฏิบัติการเครือข่ายคอมพิวเตอร์ / Computer Network Laboratory | 1(0-3) |
+| [04-620-301](courses/core/04_620_301_Seminar_in_Computer_Engineering.md) | สัมมนาทางวิศวกรรมคอมพิวเตอร์ / Seminar in Computer Engineering | 1(0-3) |
+| [04-621-301](courses/core/04_621_301_Computer_Organization_and_Architecture.md) | องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์ / Computer Organization and Architecture | 3(3-0) |
+| [04-621-302](courses/core/04_621_302_Internet_of_Things.md) | อินเตอร์เน็ตของสรรพสิ่ง / Internet of Things | 3(2-3) |
+| [04-622-301](courses/core/04_622_301_Full-stack_Web_Development.md) | การพัฒนาเว็บเต็มรูปแบบ / Full-stack Web Development | 3(2-3) |
+| [04-623-301](courses/core/04_623_301_Computer_Network_Laboratory.md) | ปฏิบัติการเครือข่ายคอมพิวเตอร์ / Computer Network Laboratory | 1(0-3) |
 | 04-xxx-xxx | หมวดวิชาเฉพาะ — กลุ่มวิชาเลือก (2) | 3(x-x) |
 | 09-122-103 | สถิติทั่วไป / General Statistics | 3(3-0) |
 | xx-xxx-xxx | หมวดวิชาศึกษาทั่วไป — กลุ่มวิชาความเป็นพลเมืองไทยและพลเมืองโลก (2) | 3(x-x) |
@@ -184,13 +184,13 @@
 
 | รหัส | ชื่อวิชา | หน่วยกิต |
 | --- | --- | --- |
-| [04-000-301](courses/cwie/04_000_301.md) | การเตรียมความพร้อมฝึกประสบการณ์วิชาชีพ | 1(0-2) |
-| [04-620-302](courses/core/04_620_302.md) | ปฏิบัติการบูรณาการระบบคอมพิวเตอร์ / Computer System Integration Laboratory | 2(0-6) |
-| [04-620-303](courses/core/04_620_303.md) | การเตรียมโครงงานวิศวกรรมคอมพิวเตอร์ / Computer Engineering Pre-Project | 1(0-3) |
-| [04-621-303](courses/core/04_621_303.md) | ระบบปฏิบัติการ / Operating Systems | 3(3-0) |
-| [04-622-302](courses/core/04_622_302.md) | วิศวกรรมซอฟต์แวร์ / Software Engineering | 3(2-3) |
-| [04-622-303](courses/core/04_622_303.md) | การโปรแกรมอุปกรณ์เคลื่อนที่สำหรับอุตสาหกรรมดิจิทัล / Mobile Device Programming for Digital Industry | 3(2-3) |
-| [04-624-301](courses/core/04_624_301.md) | การประมวลผลภาพและการมองเห็นของคอมพิวเตอร์ / Image Processing and Computer Vision | 3(2-3) |
+| [04-000-301](courses/cwie/04_000_301_Professional_Experience_Preparation.md) | การเตรียมความพร้อมฝึกประสบการณ์วิชาชีพ | 1(0-2) |
+| [04-620-302](courses/core/04_620_302_Computer_System_Integration_Laboratory.md) | ปฏิบัติการบูรณาการระบบคอมพิวเตอร์ / Computer System Integration Laboratory | 2(0-6) |
+| [04-620-303](courses/core/04_620_303_Computer_Engineering_Pre-Project.md) | การเตรียมโครงงานวิศวกรรมคอมพิวเตอร์ / Computer Engineering Pre-Project | 1(0-3) |
+| [04-621-303](courses/core/04_621_303_Operating_Systems.md) | ระบบปฏิบัติการ / Operating Systems | 3(3-0) |
+| [04-622-302](courses/core/04_622_302_Software_Engineering.md) | วิศวกรรมซอฟต์แวร์ / Software Engineering | 3(2-3) |
+| [04-622-303](courses/core/04_622_303_Mobile_Device_Programming_for_Digital_Industry.md) | การโปรแกรมอุปกรณ์เคลื่อนที่สำหรับอุตสาหกรรมดิจิทัล / Mobile Device Programming for Digital Industry | 3(2-3) |
+| [04-624-301](courses/core/04_624_301_Image_Processing_and_Computer_Vision.md) | การประมวลผลภาพและการมองเห็นของคอมพิวเตอร์ / Image Processing and Computer Vision | 3(2-3) |
 | 04-xxx-xxx | หมวดวิชาเฉพาะ — กลุ่มวิชาเลือก (3) | 3(x-x) |
 | **รวม** | | **19** |
 
@@ -200,14 +200,14 @@
 
 | รหัส | ชื่อวิชา | หน่วยกิต |
 | --- | --- | --- |
-| [04-000-401](courses/cwie/04_000_401.md) | สหกิจศึกษา / Cooperative Education | 6(0-40) |
+| [04-000-401](courses/cwie/04_000_401_Cooperative_Education.md) | สหกิจศึกษา / Cooperative Education | 6(0-40) |
 | **รวม** | | **6** |
 
 ### ชั้นปีที่ 4 / ภาคการศึกษาที่ 2 — 15 หน่วยกิต
 
 | รหัส | ชื่อวิชา | หน่วยกิต |
 | --- | --- | --- |
-| [04-620-401](courses/core/04_620_401.md) | โครงงานวิศวกรรมคอมพิวเตอร์ / Computer Engineering Project | 3(1-6) |
+| [04-620-401](courses/core/04_620_401_Computer_Engineering_Project.md) | โครงงานวิศวกรรมคอมพิวเตอร์ / Computer Engineering Project | 3(1-6) |
 | 04-xxx-xxx | หมวดวิชาเฉพาะ — กลุ่มวิชาเลือก (4) | 3(x-x) |
 | xx-xxx-xxx | หมวดวิชาศึกษาทั่วไป — กลุ่มวิชาส่งเสริมความเป็นผู้ประกอบการ | 3(x-x) |
 | xx-xxx-xxx | หมวดวิชาเลือกเสรี (1) | 3(x-x) |
@@ -248,17 +248,17 @@
 
 | รหัส | ชื่อวิชา | หน่วยกิต |
 | --- | --- | --- |
-| [04-621-101](courses/foundation/04_621_101.md) | การเขียนโปรแกรมคอมพิวเตอร์ / Computer Programming | 3(2-3) |
-| [04-621-201](courses/foundation/04_621_201.md) | วงจรไฟฟ้าสำหรับวิศวกรรมคอมพิวเตอร์ / Electrical Circuits for Computer Engineering | 3(2-3) |
-| [04-621-202](courses/foundation/04_621_202.md) | วงจรอิเล็กทรอนิกส์สำหรับวิศวกรรมคอมพิวเตอร์ / Electronics Circuits for Computer Engineering | 3(2-3) |
-| [04-621-203](courses/foundation/04_621_203.md) | การออกแบบวงจรดิจิทัลและตรรกะ / Digital Circuit and Logic Design | 3(2-3) |
-| [04-621-204](courses/foundation/04_621_204.md) | ไมโครคอนโทรลเลอร์และการเชื่อมต่อ / Microcontroller and Interfacing | 3(2-3) |
-| [04-622-201](courses/foundation/04_622_201.md) | โครงสร้างข้อมูลและอัลกอริทึม / Data Structure and Algorithms | 3(2-3) |
-| [04-622-202](courses/foundation/04_622_202.md) | ระบบฐานข้อมูล / Database System | 3(2-3) |
-| [04-623-201](courses/foundation/04_623_201.md) | การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ / Data Communication and Computer Networking | 3(3-0) |
-| [04-624-201](courses/foundation/04_624_201.md) | ทฤษฎีการคำนวณ / Theory of Computation | 3(3-0) |
-| [04-620-201](courses/foundation/04_620_201.md) | ปฏิบัติการควบคุมเวอร์ชัน / Version Control Laboratory | 1(0-3) |
-| [04-620-202](courses/foundation/04_620_202.md) | ปฏิบัติการโปรแกรมภาษาไพธอน / Python Programming Laboratory | 1(0-3) |
+| [04-621-101](courses/foundation/04_621_101_Computer_Programming.md) | การเขียนโปรแกรมคอมพิวเตอร์ / Computer Programming | 3(2-3) |
+| [04-621-201](courses/foundation/04_621_201_Electrical_Circuits_for_Computer_Engineering.md) | วงจรไฟฟ้าสำหรับวิศวกรรมคอมพิวเตอร์ / Electrical Circuits for Computer Engineering | 3(2-3) |
+| [04-621-202](courses/foundation/04_621_202_Electronics_Circuits_for_Computer_Engineering.md) | วงจรอิเล็กทรอนิกส์สำหรับวิศวกรรมคอมพิวเตอร์ / Electronics Circuits for Computer Engineering | 3(2-3) |
+| [04-621-203](courses/foundation/04_621_203_Digital_Circuit_and_Logic_Design.md) | การออกแบบวงจรดิจิทัลและตรรกะ / Digital Circuit and Logic Design | 3(2-3) |
+| [04-621-204](courses/foundation/04_621_204_Microcontroller_and_Interfacing.md) | ไมโครคอนโทรลเลอร์และการเชื่อมต่อ / Microcontroller and Interfacing | 3(2-3) |
+| [04-622-201](courses/foundation/04_622_201_Data_Structure_and_Algorithms.md) | โครงสร้างข้อมูลและอัลกอริทึม / Data Structure and Algorithms | 3(2-3) |
+| [04-622-202](courses/foundation/04_622_202_Database_System.md) | ระบบฐานข้อมูล / Database System | 3(2-3) |
+| [04-623-201](courses/foundation/04_623_201_Data_Communication_and_Computer_Networking.md) | การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ / Data Communication and Computer Networking | 3(3-0) |
+| [04-624-201](courses/foundation/04_624_201_Theory_of_Computation.md) | ทฤษฎีการคำนวณ / Theory of Computation | 3(3-0) |
+| [04-620-201](courses/foundation/04_620_201_Version_Control_Laboratory.md) | ปฏิบัติการควบคุมเวอร์ชัน / Version Control Laboratory | 1(0-3) |
+| [04-620-202](courses/foundation/04_620_202_Python_Programming_Laboratory.md) | ปฏิบัติการโปรแกรมภาษาไพธอน / Python Programming Laboratory | 1(0-3) |
 
 ### 8.2 กลุ่มวิชาบังคับ (Core) — 48 หน่วยกิต
 
@@ -266,40 +266,40 @@
 
 | รหัส | ชื่อวิชา | หน่วยกิต |
 | --- | --- | --- |
-| [04-621-301](courses/core/04_621_301.md) | องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์ / Computer Organization and Architecture | 3(3-0) |
-| [04-621-302](courses/core/04_621_302.md) | อินเตอร์เน็ตของสรรพสิ่ง / Internet of Things | 3(2-3) |
+| [04-621-301](courses/core/04_621_301_Computer_Organization_and_Architecture.md) | องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์ / Computer Organization and Architecture | 3(3-0) |
+| [04-621-302](courses/core/04_621_302_Internet_of_Things.md) | อินเตอร์เน็ตของสรรพสิ่ง / Internet of Things | 3(2-3) |
 
 **กลุ่มเทคโนโลยีและวิธีการทางซอฟต์แวร์:**
 
 | รหัส | ชื่อวิชา | หน่วยกิต |
 | --- | --- | --- |
-| [04-622-203](courses/core/04_622_203.md) | การเขียนโปรแกรมเชิงวัตถุ / Object-Oriented Programming | 3(2-3) |
-| [04-622-301](courses/core/04_622_301.md) | การพัฒนาเว็บเต็มรูปแบบ / Full-stack Web Development | 3(2-3) |
-| [04-622-302](courses/core/04_622_302.md) | วิศวกรรมซอฟต์แวร์ / Software Engineering | 3(2-3) |
-| [04-622-303](courses/core/04_622_303.md) | การโปรแกรมอุปกรณ์เคลื่อนที่สำหรับอุตสาหกรรมดิจิทัล / Mobile Device Programming for Digital Industry | 3(2-3) |
+| [04-622-203](courses/core/04_622_203_Object-Oriented_Programming.md) | การเขียนโปรแกรมเชิงวัตถุ / Object-Oriented Programming | 3(2-3) |
+| [04-622-301](courses/core/04_622_301_Full-stack_Web_Development.md) | การพัฒนาเว็บเต็มรูปแบบ / Full-stack Web Development | 3(2-3) |
+| [04-622-302](courses/core/04_622_302_Software_Engineering.md) | วิศวกรรมซอฟต์แวร์ / Software Engineering | 3(2-3) |
+| [04-622-303](courses/core/04_622_303_Mobile_Device_Programming_for_Digital_Industry.md) | การโปรแกรมอุปกรณ์เคลื่อนที่สำหรับอุตสาหกรรมดิจิทัล / Mobile Device Programming for Digital Industry | 3(2-3) |
 
 **กลุ่มเทคโนโลยีและวิธีการทางระบบเครือข่าย:**
 
 | รหัส | ชื่อวิชา | หน่วยกิต |
 | --- | --- | --- |
-| [04-623-202](courses/core/04_623_202.md) | ระบบเครือข่ายแบบทีซีพีไอพี / TCP/IP Networks | 3(2-3) |
-| [04-621-303](courses/core/04_621_303.md) | ระบบปฏิบัติการ / Operating Systems | 3(3-0) |
-| [04-623-301](courses/core/04_623_301.md) | ปฏิบัติการเครือข่ายคอมพิวเตอร์ / Computer Network Laboratory | 1(0-3) |
+| [04-623-202](courses/core/04_623_202_TCP_IP_Networks.md) | ระบบเครือข่ายแบบทีซีพีไอพี / TCP/IP Networks | 3(2-3) |
+| [04-621-303](courses/core/04_621_303_Operating_Systems.md) | ระบบปฏิบัติการ / Operating Systems | 3(3-0) |
+| [04-623-301](courses/core/04_623_301_Computer_Network_Laboratory.md) | ปฏิบัติการเครือข่ายคอมพิวเตอร์ / Computer Network Laboratory | 1(0-3) |
 
 **กลุ่มคณิตศาสตร์และวิธีการทางปัญญาประดิษฐ์:**
 
 | รหัส | ชื่อวิชา | หน่วยกิต |
 | --- | --- | --- |
-| [04-624-301](courses/core/04_624_301.md) | การประมวลผลภาพและการมองเห็นของคอมพิวเตอร์ / Image Processing and Computer Vision | 3(2-3) |
+| [04-624-301](courses/core/04_624_301_Image_Processing_and_Computer_Vision.md) | การประมวลผลภาพและการมองเห็นของคอมพิวเตอร์ / Image Processing and Computer Vision | 3(2-3) |
 
 **กลุ่มวิชาบูรณาการทางวิศวกรรม:**
 
 | รหัส | ชื่อวิชา | หน่วยกิต |
 | --- | --- | --- |
-| [04-620-301](courses/core/04_620_301.md) | สัมมนาทางวิศวกรรมคอมพิวเตอร์ / Seminar in Computer Engineering | 1(0-3) |
-| [04-620-302](courses/core/04_620_302.md) | ปฏิบัติการบูรณาการระบบคอมพิวเตอร์ / Computer System Integration Laboratory | 2(0-6) |
-| [04-620-303](courses/core/04_620_303.md) | การเตรียมโครงงานวิศวกรรมคอมพิวเตอร์ / Computer Engineering Pre-Project | 1(0-3) |
-| [04-620-401](courses/core/04_620_401.md) | โครงงานวิศวกรรมคอมพิวเตอร์ / Computer Engineering Project | 3(1-6) |
+| [04-620-301](courses/core/04_620_301_Seminar_in_Computer_Engineering.md) | สัมมนาทางวิศวกรรมคอมพิวเตอร์ / Seminar in Computer Engineering | 1(0-3) |
+| [04-620-302](courses/core/04_620_302_Computer_System_Integration_Laboratory.md) | ปฏิบัติการบูรณาการระบบคอมพิวเตอร์ / Computer System Integration Laboratory | 2(0-6) |
+| [04-620-303](courses/core/04_620_303_Computer_Engineering_Pre-Project.md) | การเตรียมโครงงานวิศวกรรมคอมพิวเตอร์ / Computer Engineering Pre-Project | 1(0-3) |
+| [04-620-401](courses/core/04_620_401_Computer_Engineering_Project.md) | โครงงานวิศวกรรมคอมพิวเตอร์ / Computer Engineering Project | 3(1-6) |
 
 ### 8.3 กลุ่มวิชาเลือก (Electives) — 12 หน่วยกิต
 
