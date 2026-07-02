@@ -59,6 +59,7 @@ prerequisites: [04-621-101]
 
 | CLO | [PLO1](../../CPE_RMUTT68_Prospectus.md#plo1) | [PLO2](../../CPE_RMUTT68_Prospectus.md#plo2) | [PLO3](../../CPE_RMUTT68_Prospectus.md#plo3) | [PLO4](../../CPE_RMUTT68_Prospectus.md#plo4) | [PLO5](../../CPE_RMUTT68_Prospectus.md#plo5) | [PLO6](../../CPE_RMUTT68_Prospectus.md#plo6) | [PLO7](../../CPE_RMUTT68_Prospectus.md#plo7) | [PLO8](../../CPE_RMUTT68_Prospectus.md#plo8) |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| TABEE PO | PO1 | PO3 | PO8 | PO2, PO4 | PO5 | PO9 | PO11 | PO6, PO7, PO10 |
 | CLO1 | ● |  |  |  |  |  |  |  |
 | CLO2 |  | ● |  |  |  |  |  |  |
 | CLO3 |  |  |  | ● |  |  |  |  |
