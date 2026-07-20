@@ -57,14 +57,103 @@ prerequisites: [04-621-204]
 
 > PLO definitions → [Prospectus](../../../CPE_RMUTT68_Prospectus.md#plos) | ภาพรวมทุกรายวิชา → [PLO–CLO Matrix](../../../CPE_RMUTT68_PLO_CLO_Matrix.md)
 
-| CLO | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) | [PLO3](../../../CPE_RMUTT68_Prospectus.md#plo3) | [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4) | [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4) | [PLO5](../../../CPE_RMUTT68_Prospectus.md#plo5) | [PLO6](../../../CPE_RMUTT68_Prospectus.md#plo6) | [PLO7](../../../CPE_RMUTT68_Prospectus.md#plo7) | [PLO8](../../../CPE_RMUTT68_Prospectus.md#plo8) | [PLO8](../../../CPE_RMUTT68_Prospectus.md#plo8) | [PLO8](../../../CPE_RMUTT68_Prospectus.md#plo8) |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| TABEE PO | PO1 | PO3 | PO8 | PO2 | PO4 | PO5 | PO9 | PO11 | PO6 | PO7 | PO10 |
-| CLO1 |  | ● |  |  |  |  |  |  |  |  |  |
-| CLO2 |  |  | ● |  |  |  |  |  |  |  |  |
-| CLO3 |  |  |  | ● |  |  |  |  |  |  |  |
-| CLO4 |  |  |  |  |  | ● |  |  |  |  |  |
-| CLO5 |  |  |  |  |  |  | ● |  |  |  |  |
+<table>
+<tr>
+<th>CLO</th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo1">PLO1</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo2">PLO2</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo3">PLO3</a></th>
+<th colspan="2"><a href="../../../CPE_RMUTT68_Prospectus.md#plo4">PLO4</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo5">PLO5</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo6">PLO6</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo7">PLO7</a></th>
+<th colspan="3"><a href="../../../CPE_RMUTT68_Prospectus.md#plo8">PLO8</a></th>
+</tr>
+<tr>
+<th>TABEE PO</th>
+<th>PO1</th>
+<th>PO3</th>
+<th>PO8</th>
+<th>PO2</th>
+<th>PO4</th>
+<th>PO5</th>
+<th>PO9</th>
+<th>PO11</th>
+<th>PO6</th>
+<th>PO7</th>
+<th>PO10</th>
+</tr>
+<tr>
+<td>CLO1</td>
+<td align="center"></td>
+<td align="center">●</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>CLO2</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">●</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>CLO3</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">●</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>CLO4</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">●</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>CLO5</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">●</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</table>
 
 ---
 
