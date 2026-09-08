@@ -8,36 +8,36 @@ Links to all 64 course `.md` files, grouped by category (matching the `courses/`
 
 | รหัส | ชื่อวิชา | Course Name | หน่วยกิต | ชั้นปี/ภาค |
 | --- | --- | --- | --- | --- |
-| [04-620-201](courses/foundation/04_620_201_Version_Control_Laboratory.md) | ปฏิบัติการควบคุมเวอร์ชัน | Version Control Laboratory | 1(0-3) | ปี 2 / ภาค 1 |
-| [04-620-202](courses/foundation/04_620_202_Python_Programming_Laboratory.md) | ปฏิบัติการโปรแกรมภาษาไพธอน | Python Programming Laboratory | 1(0-3) | ปี 2 / ภาค 1 |
-| [04-621-101](courses/foundation/04_621_101_Computer_Programming.md) | การเขียนโปรแกรมคอมพิวเตอร์ | Computer Programming | 3(2-3) | ปี 1 / ภาค 1 |
-| [04-621-201](courses/foundation/04_621_201_Electrical_Circuits_for_Computer_Engineering.md) | วงจรไฟฟ้าสำหรับวิศวกรรมคอมพิวเตอร์ | Electrical Circuits for Computer Engineering | 3(2-3) | ปี 2 / ภาค 1 |
-| [04-621-202](courses/foundation/04_621_202_Electronics_Circuits_for_Computer_Engineering.md) | วงจรอิเล็กทรอนิกส์สำหรับวิศวกรรมคอมพิวเตอร์ | Electronics Circuits for Computer Engineering | 3(2-3) | ปี 2 / ภาค 2 |
-| [04-621-203](courses/foundation/04_621_203_Digital_Circuit_and_Logic_Design.md) | การออกแบบวงจรดิจิทัลและตรรกะ | Digital Circuit and Logic Design | 3(2-3) | ปี 2 / ภาค 1 |
-| [04-621-204](courses/foundation/04_621_204_Microcontroller_and_Interfacing.md) | ไมโครคอนโทรลเลอร์และการเชื่อมต่อ | Microcontroller and Interfacing | 3(2-3) | ปี 2 / ภาค 2 |
-| [04-622-201](courses/foundation/04_622_201_Data_Structure_and_Algorithms.md) | โครงสร้างข้อมูลและอัลกอริทึม | Data Structure and Algorithms | 3(2-3) | ปี 2 / ภาค 1 |
-| [04-622-202](courses/foundation/04_622_202_Database_System.md) | ระบบฐานข้อมูล | Database System | 3(2-3) | ปี 2 / ภาค 2 |
-| [04-623-201](courses/foundation/04_623_201_Data_Communication_and_Computer_Networking.md) | การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ | Data Communication and Computer Networking | 3(3-0) | ปี 2 / ภาค 1 |
-| [04-624-201](courses/foundation/04_624_201_Theory_of_Computation.md) | ทฤษฎีการคำนวณ | Theory of Computation | 3(3-0) | ปี 2 / ภาค 1 |
+| [04-620-201](courses/foundation/04_620_201_Version_Control_Laboratory.md) | ปฏิบัติการควบคุมเวอร์ชัน | Version Control Laboratory | 1(0-3) | ปี2/1 |
+| [04-620-202](courses/foundation/04_620_202_Python_Programming_Laboratory.md) | ปฏิบัติการโปรแกรมภาษาไพธอน | Python Programming Laboratory | 1(0-3) | ปี2/1 |
+| [04-621-101](courses/foundation/04_621_101_Computer_Programming.md) | การเขียนโปรแกรมคอมพิวเตอร์ | Computer Programming | 3(2-3) | ปี1/1 |
+| [04-621-201](courses/foundation/04_621_201_Electrical_Circuits_for_Computer_Engineering.md) | วงจรไฟฟ้าสำหรับวิศวกรรมคอมพิวเตอร์ | Electrical Circuits for Computer Engineering | 3(2-3) | ปี2/1 |
+| [04-621-202](courses/foundation/04_621_202_Electronics_Circuits_for_Computer_Engineering.md) | วงจรอิเล็กทรอนิกส์สำหรับวิศวกรรมคอมพิวเตอร์ | Electronics Circuits for Computer Engineering | 3(2-3) | ปี2/2 |
+| [04-621-203](courses/foundation/04_621_203_Digital_Circuit_and_Logic_Design.md) | การออกแบบวงจรดิจิทัลและตรรกะ | Digital Circuit and Logic Design | 3(2-3) | ปี2/1 |
+| [04-621-204](courses/foundation/04_621_204_Microcontroller_and_Interfacing.md) | ไมโครคอนโทรลเลอร์และการเชื่อมต่อ | Microcontroller and Interfacing | 3(2-3) | ปี2/2 |
+| [04-622-201](courses/foundation/04_622_201_Data_Structure_and_Algorithms.md) | โครงสร้างข้อมูลและอัลกอริทึม | Data Structure and Algorithms | 3(2-3) | ปี2/1 |
+| [04-622-202](courses/foundation/04_622_202_Database_System.md) | ระบบฐานข้อมูล | Database System | 3(2-3) | ปี2/2 |
+| [04-623-201](courses/foundation/04_623_201_Data_Communication_and_Computer_Networking.md) | การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์ | Data Communication and Computer Networking | 3(3-0) | ปี2/1 |
+| [04-624-201](courses/foundation/04_624_201_Theory_of_Computation.md) | ทฤษฎีการคำนวณ | Theory of Computation | 3(3-0) | ปี2/1 |
 
 ## Core — กลุ่มวิชาบังคับ (`courses/core/`, 48 หน่วยกิต)
 
 | รหัส | ชื่อวิชา | Course Name | หน่วยกิต | ชั้นปี/ภาค |
 | --- | --- | --- | --- | --- |
-| [04-620-301](courses/core/04_620_301_Seminar_in_Computer_Engineering.md) | สัมมนาทางวิศวกรรมคอมพิวเตอร์ | Seminar in Computer Engineering | 1(0-3) | ปี 3 / ภาค 1 |
-| [04-620-302](courses/core/04_620_302_Computer_System_Integration_Laboratory.md) | ปฏิบัติการบูรณาการระบบคอมพิวเตอร์ | Computer System Integration Laboratory | 2(0-6) | ปี 3 / ภาค 2 |
-| [04-620-303](courses/core/04_620_303_Computer_Engineering_Pre-Project.md) | การเตรียมโครงงานวิศวกรรมคอมพิวเตอร์ | Computer Engineering Pre-Project | 1(0-3) | ปี 3 / ภาค 2 |
-| [04-620-401](courses/core/04_620_401_Computer_Engineering_Project.md) | โครงงานวิศวกรรมคอมพิวเตอร์ | Computer Engineering Project | 3(1-6) | ปี 4 / ภาค 2 |
-| [04-621-301](courses/core/04_621_301_Computer_Organization_and_Architecture.md) | องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์ | Computer Organization and Architecture | 3(3-0) | ปี 3 / ภาค 1 |
-| [04-621-302](courses/core/04_621_302_Internet_of_Things.md) | อินเตอร์เน็ตของสรรพสิ่ง | Internet of Things | 3(2-3) | ปี 3 / ภาค 1 |
-| [04-621-303](courses/core/04_621_303_Operating_Systems.md) | ระบบปฏิบัติการ | Operating Systems | 3(3-0) | ปี 3 / ภาค 2 |
-| [04-622-203](courses/core/04_622_203_Object-Oriented_Programming.md) | การเขียนโปรแกรมเชิงวัตถุ | Object-Oriented Programming | 3(2-3) | ปี 2 / ภาค 2 |
-| [04-622-301](courses/core/04_622_301_Full-stack_Web_Development.md) | การพัฒนาเว็บเต็มรูปแบบ | Full-stack Web Development | 3(2-3) | ปี 3 / ภาค 1 |
-| [04-622-302](courses/core/04_622_302_Software_Engineering.md) | วิศวกรรมซอฟต์แวร์ | Software Engineering | 3(2-3) | ปี 3 / ภาค 2 |
-| [04-622-303](courses/core/04_622_303_Mobile_Device_Programming_for_Digital_Industry.md) | การโปรแกรมอุปกรณ์เคลื่อนที่สำหรับอุตสาหกรรมดิจิทัล | Mobile Device Programming for Digital Industry | 3(2-3) | ปี 3 / ภาค 2 |
-| [04-623-202](courses/core/04_623_202_TCP_IP_Networks.md) | ระบบเครือข่ายแบบทีซีพีไอพี | TCP/IP Networks | 3(3-0) | ปี 2 / ภาค 2 |
-| [04-623-301](courses/core/04_623_301_Computer_Network_Laboratory.md) | ปฏิบัติการเครือข่ายคอมพิวเตอร์ | Computer Network Laboratory | 1(0-3) | ปี 3 / ภาค 1 |
-| [04-624-301](courses/core/04_624_301_Image_Processing_and_Computer_Vision.md) | การประมวลผลภาพและการมองเห็นของคอมพิวเตอร์ | Image Processing and Computer Vision | 3(2-3) | ปี 3 / ภาค 2 |
+| [04-620-301](courses/core/04_620_301_Seminar_in_Computer_Engineering.md) | สัมมนาทางวิศวกรรมคอมพิวเตอร์ | Seminar in Computer Engineering | 1(0-3) | ปี3/1 |
+| [04-620-302](courses/core/04_620_302_Computer_System_Integration_Laboratory.md) | ปฏิบัติการบูรณาการระบบคอมพิวเตอร์ | Computer System Integration Laboratory | 2(0-6) | ปี3/2 |
+| [04-620-303](courses/core/04_620_303_Computer_Engineering_Pre-Project.md) | การเตรียมโครงงานวิศวกรรมคอมพิวเตอร์ | Computer Engineering Pre-Project | 1(0-3) | ปี3/2 |
+| [04-620-401](courses/core/04_620_401_Computer_Engineering_Project.md) | โครงงานวิศวกรรมคอมพิวเตอร์ | Computer Engineering Project | 3(1-6) | ปี4/2 |
+| [04-621-301](courses/core/04_621_301_Computer_Organization_and_Architecture.md) | องค์ประกอบและสถาปัตยกรรมคอมพิวเตอร์ | Computer Organization and Architecture | 3(3-0) | ปี3/1 |
+| [04-621-302](courses/core/04_621_302_Internet_of_Things.md) | อินเตอร์เน็ตของสรรพสิ่ง | Internet of Things | 3(2-3) | ปี3/1 |
+| [04-621-303](courses/core/04_621_303_Operating_Systems.md) | ระบบปฏิบัติการ | Operating Systems | 3(3-0) | ปี3/2 |
+| [04-622-203](courses/core/04_622_203_Object-Oriented_Programming.md) | การเขียนโปรแกรมเชิงวัตถุ | Object-Oriented Programming | 3(2-3) | ปี2/2 |
+| [04-622-301](courses/core/04_622_301_Full-stack_Web_Development.md) | การพัฒนาเว็บเต็มรูปแบบ | Full-stack Web Development | 3(2-3) | ปี3/1 |
+| [04-622-302](courses/core/04_622_302_Software_Engineering.md) | วิศวกรรมซอฟต์แวร์ | Software Engineering | 3(2-3) | ปี3/2 |
+| [04-622-303](courses/core/04_622_303_Mobile_Device_Programming_for_Digital_Industry.md) | การโปรแกรมอุปกรณ์เคลื่อนที่สำหรับอุตสาหกรรมดิจิทัล | Mobile Device Programming for Digital Industry | 3(2-3) | ปี3/2 |
+| [04-623-202](courses/core/04_623_202_TCP_IP_Networks.md) | ระบบเครือข่ายแบบทีซีพีไอพี | TCP/IP Networks | 3(3-0) | ปี2/2 |
+| [04-623-301](courses/core/04_623_301_Computer_Network_Laboratory.md) | ปฏิบัติการเครือข่ายคอมพิวเตอร์ | Computer Network Laboratory | 1(0-3) | ปี3/1 |
+| [04-624-301](courses/core/04_624_301_Image_Processing_and_Computer_Vision.md) | การประมวลผลภาพและการมองเห็นของคอมพิวเตอร์ | Image Processing and Computer Vision | 3(2-3) | ปี3/2 |
 
 ## Electives — AI — กลุ่มวิชาเลือก (`courses/electives/ai/`)
 
@@ -96,9 +96,9 @@ Links to all 64 course `.md` files, grouped by category (matching the `courses/`
 
 | รหัส | ชื่อวิชา | Course Name | หน่วยกิต | ชั้นปี/ภาค |
 | --- | --- | --- | --- | --- |
-| [04-000-301](courses/cwie/04_000_301_Professional_Experience_Preparation.md) | การเตรียมความพร้อมฝึกประสบการณ์วิชาชีพ | Professional Experience Preparation | 1(0-2) | ปี 3 / ภาค 2 |
-| [04-000-302](courses/cwie/04_000_302_Apprenticeship.md) | ฝึกงาน | Apprenticeship | 3(0-20) | ปี 4 / ภาค 1 |
-| [04-000-303](courses/cwie/04_000_303_International_Apprenticeship.md) | ฝึกงานต่างประเทศ | International Apprenticeship | 3(0-20) | ปี 4 / ภาค 1 |
-| [04-000-401](courses/cwie/04_000_401_Cooperative_Education.md) | สหกิจศึกษา | Cooperative Education | 6(0-40) | ปี 4 / ภาค 1 |
-| [04-000-402](courses/cwie/04_000_402_Industry_Special_Problem.md) | ปัญหาพิเศษจากสถานประกอบการ | Industry Special Problem | 3(x-x) | ปี 4 / ภาค 1 |
-| [04-000-403](courses/cwie/04_000_403_International_Cooperative_Education.md) | สหกิจศึกษาต่างประเทศ | International Cooperative Education | 6(0-40) | ปี 4 / ภาค 1 |
+| [04-000-301](courses/cwie/04_000_301_Professional_Experience_Preparation.md) | การเตรียมความพร้อมฝึกประสบการณ์วิชาชีพ | Professional Experience Preparation | 1(0-2) | ปี3/2 |
+| [04-000-302](courses/cwie/04_000_302_Apprenticeship.md) | ฝึกงาน | Apprenticeship | 3(0-20) | ปี4/1 |
+| [04-000-303](courses/cwie/04_000_303_International_Apprenticeship.md) | ฝึกงานต่างประเทศ | International Apprenticeship | 3(0-20) | ปี4/1 |
+| [04-000-401](courses/cwie/04_000_401_Cooperative_Education.md) | สหกิจศึกษา | Cooperative Education | 6(0-40) | ปี4/1 |
+| [04-000-402](courses/cwie/04_000_402_Industry_Special_Problem.md) | ปัญหาพิเศษจากสถานประกอบการ | Industry Special Problem | 3(x-x) | ปี4/1 |
+| [04-000-403](courses/cwie/04_000_403_International_Cooperative_Education.md) | สหกิจศึกษาต่างประเทศ | International Cooperative Education | 6(0-40) | ปี4/1 |
