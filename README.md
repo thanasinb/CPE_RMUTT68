@@ -17,6 +17,7 @@
 | ไฟล์ | รายละเอียด |
 | --- | --- |
 | [CPE_RMUTT68_Prospectus.md](CPE_RMUTT68_Prospectus.md) | ข้อมูลหลักสูตรสำหรับนักศึกษา — PLOs, แผนการศึกษา, รายวิชา |
+| [Course_Index.md](Course_Index.md) | ดัชนีลิงก์ไปยังไฟล์รายวิชาทั้ง 64 วิชา แยกตามกลุ่ม |
 | [CPE_RMUTT68_PLO_CLO_Matrix.md](CPE_RMUTT68_PLO_CLO_Matrix.md) | ตารางแมป PLO–CLO ทุกรายวิชา (64 วิชา) |
 | [CPE_RMUTT68_TABEE_PO_Mapping.md](CPE_RMUTT68_TABEE_PO_Mapping.md) | ตารางแมป TABEE PO–PLO สำหรับอาจารย์ผู้สอนและผู้ประเมิน TABEE |
 | [courses/foundation/](courses/foundation/) | กลุ่มวิชาพื้นฐาน — 11 วิชา |
@@ -30,6 +31,7 @@
 
 ```
 ├── CPE_RMUTT68_Prospectus.md        # ข้อมูลหลักสูตรสำหรับนักศึกษา (student-facing)
+├── Course_Index.md                  # ดัชนีลิงก์ไปยังไฟล์รายวิชาทั้ง 64 วิชา แยกตามกลุ่ม
 ├── CPE_RMUTT68_PLO_CLO_Matrix.md   # ตารางแมป PLO–CLO ทุกรายวิชา
 ├── CPE_RMUTT68_TABEE_PO_Mapping.md # ตารางแมป TABEE PO–PLO สำหรับอาจารย์และผู้ประเมิน TABEE
 │
