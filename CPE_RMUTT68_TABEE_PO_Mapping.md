@@ -2,7 +2,7 @@
 
 # TABEE PO–PLO Mapping
 
-> ดูข้อมูลหลักสูตรและ PLO definitions: [CPE_RMUTT68_Prospectus.md](CPE_RMUTT68_Prospectus.md) | ดูการแมป PLO–CLO ทุกรายวิชา: [CPE_RMUTT68_PLO_CLO_Matrix.md](CPE_RMUTT68_PLO_CLO_Matrix.md)
+> ดูข้อมูลหลักสูตรและ PLO definitions: [CPE_RMUTT68_Prospectus.md](CPE_RMUTT68_Prospectus.md) | ดูการแมป PLO–CLO ทุกรายวิชา: [CPE_RMUTT68_PLO_CLO_Matrix.md](CPE_RMUTT68_PLO_CLO_Matrix.md) | ดูการแมป TABEE PO–PI–CLO: [CPE_RMUTT68_PO_PI_CLO_Matrix.md](CPE_RMUTT68_PO_PI_CLO_Matrix.md)
 
 ## หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์ มรท. (ปรับปรุง พ.ศ. 2568)
 

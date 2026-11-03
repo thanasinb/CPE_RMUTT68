@@ -2,7 +2,7 @@
 
 Links to all 64 course `.md` files, grouped by category (matching the `courses/` folder structure). Thai/English names and credits come from each file's frontmatter.
 
-→ [Prospectus](CPE_RMUTT68_Prospectus.md) | [PLO–CLO Matrix](CPE_RMUTT68_PLO_CLO_Matrix.md) | [TABEE PO Mapping](CPE_RMUTT68_TABEE_PO_Mapping.md)
+→ [Prospectus](CPE_RMUTT68_Prospectus.md) | [PLO–CLO Matrix](CPE_RMUTT68_PLO_CLO_Matrix.md) | [TABEE PO Mapping](CPE_RMUTT68_TABEE_PO_Mapping.md) | [PO–PI–CLO Matrix](CPE_RMUTT68_PO_PI_CLO_Matrix.md)
 
 ## Foundation — กลุ่มวิชาพื้นฐาน (`courses/foundation/`, 44 หน่วยกิต)
 

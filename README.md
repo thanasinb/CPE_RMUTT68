@@ -20,6 +20,7 @@
 | [Course_Index.md](Course_Index.md) | ดัชนีลิงก์ไปยังไฟล์รายวิชาทั้ง 64 วิชา แยกตามกลุ่ม |
 | [CPE_RMUTT68_PLO_CLO_Matrix.md](CPE_RMUTT68_PLO_CLO_Matrix.md) | ตารางแมป PLO–CLO ทุกรายวิชา (64 วิชา) |
 | [CPE_RMUTT68_TABEE_PO_Mapping.md](CPE_RMUTT68_TABEE_PO_Mapping.md) | ตารางแมป TABEE PO–PLO สำหรับอาจารย์ผู้สอนและผู้ประเมิน TABEE |
+| [CPE_RMUTT68_PO_PI_CLO_Matrix.md](CPE_RMUTT68_PO_PI_CLO_Matrix.md) | ตาราง TABEE PO–PI–CLO (ร่าง) พร้อมความครอบคลุม PI เทียบเกณฑ์การประเมิน direct/indirect |
 | [courses/foundation/](courses/foundation/) | กลุ่มวิชาพื้นฐาน — 11 วิชา |
 | [courses/core/](courses/core/) | กลุ่มวิชาบังคับ — 14 วิชา |
 | [courses/electives/](courses/electives/) | กลุ่มวิชาเลือก — 33 วิชา (4 กลุ่ม) |
@@ -34,6 +35,7 @@
 ├── Course_Index.md                  # ดัชนีลิงก์ไปยังไฟล์รายวิชาทั้ง 64 วิชา แยกตามกลุ่ม
 ├── CPE_RMUTT68_PLO_CLO_Matrix.md   # ตารางแมป PLO–CLO ทุกรายวิชา
 ├── CPE_RMUTT68_TABEE_PO_Mapping.md # ตารางแมป TABEE PO–PLO สำหรับอาจารย์และผู้ประเมิน TABEE
+├── CPE_RMUTT68_PO_PI_CLO_Matrix.md # ตาราง TABEE PO–PI–CLO (ร่าง) และความครอบคลุม PI
 │
 ├── courses/
 │   ├── foundation/                  # กลุ่มวิชาพื้นฐาน (11 วิชา)
