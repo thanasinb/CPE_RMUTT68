@@ -102,7 +102,53 @@ FLAG[('04-620-401','CLO1')] = 'เป็นการส่งรายงาน/
 FLAG[('04-620-301','CLO3')] = '"ปรับตัวและแก้ไขสถานการณ์" ไม่ใช่การเรียนรู้ด้วยตนเองจากเอกสารเทคโนโลยี (PI11.1) โดยตรง'
 FLAG[('04-622-302','CLO5')] = '"นำเสนอเป็นแผนภาพ" ใกล้เคียง PO7 (สื่อสาร) มากกว่า PO5 (เครื่องมือ)'
 for c in C:
-    for x in c['clos']: x['pis'] = assign(c, x)
+    for x in c['clos']: x['pis'] = assign(c, x); x['src'] = 'draft'
+
+# ---- lecturer-confirmed data from filled OBE3-TABEE syllabi (tools/extract_obe3.py) overrides the draft ----
+OBE3 = json.load(open(os.path.join('tools', 'obe3_clo_pi.json'), encoding='utf-8')) if os.path.exists(os.path.join('tools', 'obe3_clo_pi.json')) else {'pi_catalog': {}, 'courses': {}}
+PI_LEVEL = {p: v['level'] for p, v in OBE3['pi_catalog'].items()}
+def lv_num(s): return int(s[1]) if s and len(s) > 1 and s[1].isdigit() else None
+def level_issue(pi_lv, clo_lv):
+    """Compare a CLO's taxonomy level with its PI's level (catalog). Returns '' when aligned."""
+    if not pi_lv or not clo_lv: return ''
+    if pi_lv[0] != clo_lv[0]: return f'โดเมนต่างจาก PI ({clo_lv} เทียบกับ {pi_lv[:2]})'
+    if lv_num(clo_lv) < lv_num(pi_lv): return f'ระดับต่ำกว่า PI ({clo_lv} < {pi_lv[:2]})'
+    return ''
+import difflib
+def norm(s):
+    """Compare Thai text ignoring PDF artefacts: spaces/line breaks, dropped tone/vowel marks, ํา vs ำ, a leading 'สามารถ'."""
+    s = re.sub(r'\s+', '', s).replace('ํา', 'ำ').replace('ํ', '')
+    s = re.sub('[ัิ-ฺ็-๎]', '', s)
+    return s[len('สามารถ'):] if s.startswith('สามารถ') else s
+def similarity(a, b):
+    na, nb = norm(a), norm(b)
+    short, long_ = sorted((na.removesuffix('ได'), nb.removesuffix('ได')), key=len)
+    if len(short) >= 10 and short in long_: return 0.9          # one is a shortened form of the other
+    return difflib.SequenceMatcher(None, na, nb).ratio()
+for c in C:
+    o = OBE3['courses'].get(c['code'])
+    if not o: continue
+    for x in c['clos']: FLAG.pop((c['code'], x['clo']), None)   # draft wording flags no longer apply
+    c['repo_clos'] = c['clos']; c['obe3'] = o
+    c['clos'] = []
+    used = set()
+    for r in o['clos']:
+        # match each OBE3 CLO to the most similar CLO in the repo course file (numbering can differ)
+        best = max(((similarity(r['text'], x['text']), x) for x in c['repo_clos'] if x['clo'] not in used),
+                   key=lambda t: t[0], default=(0, None))
+        match = best[1] if best[0] >= 0.6 else None
+        if match: used.add(match['clo'])
+        same = match is not None and (norm(match['text']) == norm(r['text']) or best[0] >= 0.97)
+        notes = []
+        cat_lv = PI_LEVEL.get(r['pi'], '')
+        if cat_lv and r['pi_level'] != cat_lv[:2]: notes.append(f"ระดับ PI ใน OBE3 ({r['pi_level']}) ไม่ตรงกับแคตตาล็อก ({cat_lv[:2]})")
+        li = level_issue(cat_lv, r['clo_level'])
+        if li: notes.append('CLO ' + li)
+        if notes: FLAG[(c['code'], r['clo'])] = '; '.join(notes)
+        # same wording -> keep the repo's clean text (PDF text has broken spacing / missing marks)
+        c['clos'].append(dict(clo=r['clo'], text=match['text'] if same else r['text'], pos=['PO' + r['pi'].split('.')[0]],
+                              pis=[r['pi']], src='OBE3', clo_level=r['clo_level'], target=r['target'],
+                              repo_match=match, repo_same=same, anchor=(match['clo'].lower() if match else '')))
 
 GROUPS = [('foundation','กลุ่มวิชาพื้นฐาน'),('core','กลุ่มวิชาบังคับ'),('cwie','กลุ่มเสริมสร้างประสบการณ์ในวิชาชีพ'),
           ('electives/ai','กลุ่มวิชาเลือก: AI'),('electives/hardware','กลุ่มวิชาเลือก: Hardware'),
@@ -132,8 +178,10 @@ def lpi(p): return f'[PI{p}](#{pid(p)} "{tip(PI_DESC[p][1])}")'
 def lsk(s): return f'[{s}](#{s.lower()} "{tip(SK[s][0])}")'
 def lclo(c, x):
     note = FLAG.get((c['code'], x['clo']))
-    t = f"{x['text']} [{', '.join(x['pos'])}]" + (f' ⚑ {note}' if note else '')
-    return f"[{x['clo']}]({c['file']}#{x['clo'].lower()} \"{tip(t)}\")"
+    src = f" (OBE3, {x['clo_level']}, เกณฑ์ {x['target']}%)" if x.get('src') == 'OBE3' else ''
+    t = f"{x['text']} [{', '.join(x['pos'])}]{src}" + (f' ⚑ {note}' if note else '')
+    anchor = x['anchor'] if x.get('src') == 'OBE3' else x['clo'].lower()   # OBE3 CLO -> matched course-file CLO
+    return f"[{x['clo']}]({c['file']}{'#' + anchor if anchor else ''} \"{tip(t)}\")"
 def cell(c, pi):
     return ' '.join(lclo(c, x) + ('†' if len(x['pos']) > 1 else '') + ('⚑' if (c['code'], x['clo']) in FLAG else '')
                     for x in c['clos'] if pi in x['pis'])
@@ -164,11 +212,11 @@ A('- `⚑` คือ ถ้อยคำ CLO ไม่สอดคล้องก
 A('**ลิงก์:** คลิก PLO / PO / PI / SK / CLO เพื่อเปิดคำอธิบาย หรือวางเมาส์ค้างไว้เพื่อดูคำอธิบายโดยย่อ (tooltip)\n')
 A('---\n\n## 1. แคตตาล็อก PI และแบบความรู้ (SK)\n')
 A('### 1.1 PI (23 ข้อ)\n')
-A('| PI | TABEE PO | PLO | แบบความรู้ | ความหมายโดยย่อ |\n| --- | :---: | :---: | :---: | --- |')
+A('| PI | TABEE PO | PLO | แบบความรู้ | ระดับ (Taxonomy) | ความหมายโดยย่อ |\n| --- | :---: | :---: | :---: | :---: | --- |')
 for p in PIS:
     po = int(p.split('.')[0])
     sks = ', '.join(lsk(s.strip()) if s.strip().startswith('SK') else s for s in PI_DESC[p][0].split(','))
-    A(f'| <a id="{pid(p)}"></a>**PI{p}** | {lpo(po)} | {lplo(PO_PLO[po])} | {sks} | {PI_DESC[p][1]} |')
+    A(f'| <a id="{pid(p)}"></a>**PI{p}** | {lpo(po)} | {lplo(PO_PLO[po])} | {sks} | {PI_LEVEL.get(p, '')} | {PI_DESC[p][1]} |')
 A('\n> PI11.2 อยู่ภายใต้ **PO11** (ไฟล์ต้นแบบ `OBE3_TABEE.doc` พิมพ์ผิดเป็น "PO12")\n')
 A('### 1.2 แบบความรู้ (Knowledge Profile) ตาม Sydney Accord\n')
 A('ที่มา: IEA Graduate Attributes and Professional Competencies 2021 และ *LO Writing Manual TABEE PO-PI-CLO ENG RMUTT*\n')
@@ -186,7 +234,7 @@ for g, label in GROUPS:
     cs = sorted([c for c in C if grp(c) == g], key=lambda c: c['code'])
     A(f'### {label}\n'); L.extend(hdr)
     for c in cs:
-        A(f"| [{c['code']}]({c['file']}) {c['th']} {c['credits']} | " + ' | '.join(cell(c, p) for p in PIS) + ' |')
+        A(f"| [{c['code']}]({c['file']}) {c['th']} {c['credits']}{' **(OBE3)**' if 'obe3' in c else ''} | " + ' | '.join(cell(c, p) for p in PIS) + ' |')
     A('')
 A('---\n\n## 3. ความครอบคลุมของ PI เทียบกับเกณฑ์ TABEE\n')
 A('**เกณฑ์ขั้นต่ำต่อ PI** (ศ.สมศักดิ์ และคู่มือ SER)')
@@ -199,6 +247,32 @@ for p in PIS:
     v = cov[p]; n = len(v['req']); st = '✅' if n >= v['need'] else ('⚠️' if n else '❌')
     A(f"| {lpi(p)} | {v['need']} | {', '.join(v['req']) or '—'} | {n} | {v['el']} | {st} |")
 A('\n✅ ผ่านขั้นต่ำ · ⚠️ มีแต่ไม่ถึงขั้นต่ำ · ❌ ไม่มีรายวิชาบังคับรองรับ\n')
+# ---- generated: OBE3 data vs repo course files ----
+OC = [c for c in C if 'obe3' in c]
+if OC:
+    A('---\n\n## 3.1 ข้อมูลจาก OBE3-TABEE ที่อาจารย์กรอกแล้ว\n')
+    A(f'รายวิชาที่มีไฟล์ OBE3 ใน `source_documents/` ({len(OC)} วิชา) ใช้ CLO และ PI ตามที่อาจารย์ผู้รับผิดชอบกำหนดใน OBE3 **แทนร่างเสนอ** '
+      '(แถวที่มีป้าย **(OBE3)** ในตาราง) ข้อมูลถูกดึงด้วย `tools/extract_obe3.py` ไปเก็บที่ `tools/obe3_clo_pi.json`\n')
+    for c in OC:
+        o = c['obe3']
+        A(f"### {c['code']} {c['th']}\n")
+        A(f"ไฟล์: `{o['file']}`" + (f" · อาจารย์ผู้รับผิดชอบ: {o['lecturer']}" if o['lecturer'] else ''))
+        if o.get('code_note'): A(f"\n> ⚠️ {o['code_note']}")
+        A('\n| CLO (OBE3) | ผลลัพธ์การเรียนรู้ (OBE3) | PI | ระดับ CLO | เกณฑ์ | ในไฟล์รายวิชา: PO → PI ร่างเสนอ | ข้อสังเกต |\n'
+          '| --- | --- | :---: | :---: | :---: | --- | --- |')
+        for x in c['clos']:
+            r = x['repo_match']
+            if r:
+                old = f"{r['clo']}: {', '.join(r['pos'])} → {', '.join(r['pis'])}" + ('' if x['repo_same'] else f" (ถ้อยคำต่างกัน: {r['text']})")
+            else:
+                old = '— (ไม่มี CLO ที่ตรงกันในไฟล์รายวิชา)'
+            A(f"| {lclo(c, x)} | {x['text']} | {lpi(x['pis'][0])} | {x['clo_level']} | {x['target']}% | {old} | {FLAG.get((c['code'], x['clo']), '')} |")
+        matched = {x['repo_match']['clo'] for x in c['clos'] if x['repo_match']}
+        extra = [x for x in c['repo_clos'] if x['clo'] not in matched]
+        if extra: A('\nCLO ในไฟล์รายวิชาที่ไม่มีใน OBE3: ' + '; '.join(f"{x['clo']} ({', '.join(x['pos'])}) {x['text']}" for x in extra))
+        renum = any(x['repo_match'] and x['repo_match']['clo'] != x['clo'] for x in c['clos'])
+        if renum: A('\n> ⚠️ ลำดับเลข CLO ใน OBE3 ไม่ตรงกับไฟล์รายวิชา')
+        A('')
 BYCODE = {c['code']: c for c in C}
 LINK = re.compile(r'\[[^\]]*\]\([^ )]*(?: "[^"]*")?\)')
 def linkify(s):

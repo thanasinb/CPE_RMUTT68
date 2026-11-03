@@ -3,77 +3,106 @@
 Running log of work done with Claude Code in this repo, kept in git so it carries over between machines. Claude's own memory is per-PC and does not sync. Load it on another PC with /recall-state.
 
 ## Current State
-_Last saved: 2026-11-03 20:55 by Hedwig_
+_Last saved: 2026-11-03 22:03 by Hedwig_
 
 ### Active work
-- **TABEE PO–PI–CLO matrix (draft):** `CPE_RMUTT68_PO_PI_CLO_Matrix.md` covers all 64 courses and 295 CLOs.
-  - The CLO→PO links come from the course files. The CLO→PI choices are Claude's proposal, following the rules in §5 of that file, and still need committee review.
-  - It includes a coverage table against the TABEE direct/indirect minimums, issues (§4) and a proposed course for each PI's direct assessment (§4.5).
-  - Every PLO, PO, PI, SK and CLO in it is a link with a hover tooltip. There's an SK1–SK9 definitions table (§1.2).
-  - **Don't hand-edit the matrix. Regenerate it** with `python -I tools/build_po_pi_clo_matrix.py`. Edit the §4–5 text in `tools/po_pi_clo_matrix_sections.md`, and override single-CLO PI choices in the `OV`/`FLAG` dicts in the script.
-- **Sydney Accord curriculum review:** source documents have been reviewed. Findings and gaps in the CPE 2568 structure are in `TABEE_Sydney_Accord_Curriculum_Notes.md`.
-- **CPE-specific PI catalog analysis:** not started beyond analysis. See `TABEE_PI_Analysis_Notes.md`. Proposed output file: `CPE_RMUTT68_TABEE_PI_Reference.md`.
-- **04-621-202 Electronics course redesign:** CLO K/S/A and PI fixes, a 10-week plan and a bibliography are drafted but not yet written into the `.doc`. See `Electronics_04-621-202_Course_Design_Notes.md`.
+- **TABEE PO–PI–CLO matrix (draft):** `CPE_RMUTT68_PO_PI_CLO_Matrix.md` and `CPE_RMUTT68_PO_PI_CLO_Matrix.xlsx` cover all 64 courses (294 CLOs).
+  - **CLO→PI sources:**
+    - For the **6 courses with a filled OBE3-TABEE** (04-621-101, 04-621-202, 04-622-201, 04-624-201, 04-000-301, 04-622-302), CLOs, PIs, CLO levels and targets come from the lecturer's OBE3 (tagged "(OBE3)").
+    - All other courses use Claude's draft rules (matrix §5) on top of the CLO→PO mapping in the course files.
+  - **The `.md` contains:**
+    - the PI catalog with taxonomy levels and the SK1–SK9 table;
+    - the matrix;
+    - coverage against TABEE minimums;
+    - **§3.1, a generated comparison of each OBE3 with its course file**;
+    - issues (§4) and the proposed direct-assessment courses (§4.5).
+    - Every PLO/PO/PI/SK/CLO is a link with a hover tooltip.
+  - **The `.xlsx`** (sheets: README · PO-PI-CLO Matrix · **PO1–PO11** · CLO List · PI Catalog · SK) is formula-driven:
+    - The editable inputs on the CLO List sheet are PI, ⚑ note, CLO level and target %.
+    - The PO1–PO11 sheets follow IE's per-PO layout. Each PI lists its direct rows (Y/N to use; §4.5 proposals start as Y) and 2 indirect rows (Student Exit Survey and Co-op Employer Survey).
+    - They also have a CLO-level vs PI-level check, an attainment % input and a PI summary row.
+    - Excel recalculated all 3,542 formulas with 0 errors, and the matrix values match the `.md`.
+  - **Current coverage:**
+    - ❌ 4.1, 7.2, 8.1, 8.2, 11.2.
+    - ⚠️ 2.1 and 2.2 (1 of 2 required courses).
+    - Everything else ✅.
+  - **Don't hand-edit generated files.** Rebuild in this order:
+    1. `python -I tools/extract_obe3.py` (only after OBE3 PDFs change; it needs the `source_documents/` PDFs and writes `tools/obe3_clo_pi.json`);
+    2. `python -I tools/build_po_pi_clo_matrix.py` (the `.md`);
+    3. `python -I tools/build_po_pi_clo_xlsx.py` (the `.xlsx`, which also rebuilds the `.md`).
+    - Edit the §4–5 text in `tools/po_pi_clo_matrix_sections.md`. Override single-CLO draft PIs in `OV`/`FLAG` in the matrix script.
+    - Rebuilding the `.xlsx` **overwrites edits made inside it**. Once the committee starts editing the workbook, treat it as the master copy.
+- **Sydney Accord curriculum review:** done. Findings and gaps are in `TABEE_Sydney_Accord_Curriculum_Notes.md`.
+- **CPE-specific PI catalog analysis:** not started beyond analysis. See `TABEE_PI_Analysis_Notes.md`. Proposed output: `CPE_RMUTT68_TABEE_PI_Reference.md`.
+- **04-621-202 Electronics redesign:** see `Electronics_04-621-202_Course_Design_Notes.md`. The OBE3 PDF now shows CLO3 at K3 and CLO4 at K4, so some fixes from those notes have already been applied in the `.doc`.
 
 ### Open decisions (waiting on user)
-1. **Approve or adjust the PI assignments** in `CPE_RMUTT68_PO_PI_CLO_Matrix.md`. Once approved, should a PI column be added to each course file's CLO table?
-2. **How to close the PI coverage gaps in required courses:**
-   - No required course covers 2.1, 4.1, 4.2, 7.2, 8.1, 8.2 or 11.2. PI1.2 has 1 course where it needs 2.
-   - Claude's proposal (matrix §4.1): add CLOs to 04-620-301 Seminar (4.1, 7.2, 11.2), 04-620-302 (4.2, 8.2), 04-620-401 (PO3, PO4), 04-621-201/202 (2.1, 8.1) and 04-622-302 (10.1).
-3. **Capstone structure.** Pre-Project 04-620-303 is 1(0-3) in Y3/S2. Project 04-620-401 is 3(1-6) in Y4/S2, with Y4/S1 taken by co-op. TABEE wants 2 consecutive semesters in year 4. Options:
-   - justify the gap in the self-evaluation report (SER);
-   - restructure the courses; or
-   - count CWIE / 04-000-402 as capstone evidence.
-4. **Split the 18 CLOs that cover more than one PO** (marked †, mostly PO6+PO7, plus PO2+PO4)? Also reword the 13 CLOs marked ⚑ whose wording doesn't fit their PO.
-5. **Electronics 04-621-202** (from earlier sessions):
-   - write the CLO/PI fixes, the Learning Management checkboxes, the 10-week plan and the bibliography into the `.doc`;
-   - approve the CLO7 split.
-   - Note: the matrix uses PI2.3 for CLO4, while the Electronics notes suggested PI2.4.
-6. **PI10.1 domain:** K3-Apply, A4 or S3/S4. This affects the CPE PI reference document.
-7. **Update Prospectus §12** to state the Sydney Accord / ETAC track and list the 11 TABEE POs?
+1. **Update the course `.md` files to match the 6 OBE3s**, so repo CLOs agree with the lecturers' syllabi? Claude asked and has no answer yet. The differences are in matrix §3.1:
+   - Software Engineering adds a new CLO1, drops the old CLO1–2 and renumbers the rest;
+   - 04-000-301 has 3 entirely new CLOs;
+   - Electronics CLO1–2 are shortened.
+2. **Software Engineering course code:** the OBE3 says 04-622-301, but the curriculum and repo say 04-622-302 (04-622-301 is Full-stack Web). Which is right? Mapped in `tools/extract_obe3.py` `DOC_TO_REPO`.
+3. **Approve or adjust the PI assignments**, both the draft ones and the OBE3-sourced ones. Should a PI column then be added to each course file's CLO table?
+4. **Close the coverage gaps (matrix §4.1):**
+   - 4.1, 7.2 and 11.2 could all go into 04-620-301 Seminar;
+   - 8.1 and 8.2 need CLOs that ask students to judge impacts (04-620-302/401, 04-621-201/202);
+   - 2.1: also map 04-621-201 CLO4;
+   - 2.2: keep 04-622-201 CLO4 at PI2.2 (the OBE3 moved it to 4.2), or add another CLO.
+5. **Is PI4.2 really assessed by 04-624-201 CLO3?** That CLO is about designing formal-language models, while PI4.2 is designing and running experiments. If not, PO4's direct assessment rests only on 04-622-201 CLO4.
+6. **Capstone structure:** Pre-Project 04-620-303 is 1(0-3) in Y3/S2 and Project 04-620-401 is 3(1-6) in Y4/S2, with co-op in Y4/S1. Should the program justify the gap, restructure the courses, or count CWIE as capstone evidence? Separately, 04-620-401 has no PO3 or PO4 CLO.
+7. **Split the CLOs marked † and reword those marked ⚑?** For OBE3 courses, the level problems are listed in matrix §3.1.
+8. **Electronics `.doc` write-up** (from earlier sessions), and the PI10.1 domain question (K3 / A4 / S3–S4).
+9. **Update Prospectus §12** to state the Sydney Accord / ETAC track?
+10. **Indirect assessment:** adopt IE's model of 2 program-wide surveys (Student Exit Survey and Co-op Employer Survey) for every PI? The questions must target each PO.
 
 ### Concerns / risks
-- PO4 has no CLO in any required course; every PO4 CLO is in an elective. This blocks the direct-assessment minimums.
-- PO8 CLOs talk about "applying to other disciplines", but none asks students to judge impacts (ให้ความเห็นเกี่ยวกับผลกระทบ), which is what every PO8 PI requires.
-- 04-620-401 (Project) has no PO3 or PO4 CLO. TABEE requires the capstone to assess PO2, 3, 4, 6, 7 and 8.
-- To submit in 2570, TABEE needs at least 2 consecutive years of PO assessment data, so collection must start by 2568–2569.
+- **OBE3 quality problems** (matrix §3.1):
+  - CLO levels below the PI level: PI3.1 (K6) gets K3 CLOs from 04-621-202, 04-624-201 and 04-622-302; PI1.1 (K3) gets K2 from Electronics CLO1–2; PI9.1 (A3) gets A1 from 04-622-302 CLO5 and 04-000-301 CLO2.
+  - PI levels typed incorrectly: Electronics PI2.1 as K5 and PI6.1 as A4; Data Structure PI1.2 as K4.
+  - 04-000-301 CLO1 is A2 but is mapped to PI7.1 (S3).
+- PO8 CLOs talk about "applying to other disciplines", but none asks students to judge impacts (ให้ความเห็นเกี่ยวกับผลกระทบ).
+- To submit in 2570, at least 2 consecutive years of PO assessment data are needed, so collection must start by 2568–2569.
 - Template bug: `OBE3_TABEE.doc` labels PI11.2 as "PO12". It belongs under PO11.
-- It isn't confirmed whether broadly-defined problems need at least 4 SP characteristics; complex problems need 4. It also isn't confirmed whether the Council of Engineers recognises Sydney Accord degrees for licensing (the NK deck says "to be confirmed").
-- `source_documents/` is git-ignored. Edits to `.doc` files there have no backup, so back up before editing.
+- Unconfirmed:
+  - whether broadly-defined problems need at least 4 SP characteristics;
+  - whether the Council of Engineers recognises Sydney Accord degrees for licensing.
+- `source_documents/` is git-ignored. Back up `.doc` files before editing them.
 
 ### Requirements & constraints to respect
-- Follow `CLAUDE.md`:
-  - course types are กลุ่มวิชาศึกษาทั่วไป, กลุ่มวิชาพื้นฐาน, กลุ่มวิชาบังคับ, กลุ่มวิชาเลือก and กลุ่มเสริมสร้างประสบการณ์ในวิชาชีพ;
-  - the credit format is X(Y-Z).
-- The program targets **TABEE under the Sydney Accord (ETAC)**, using SK1–SK9 and broadly-defined problems. Submission is planned for academic year 2570.
-- Use the RMUTT LO Writing Manual's PI catalog (PI1.1–PI11.2, 23 PIs), not the WA-style PI numbering from ศ.สมศักดิ์'s slides.
-- Rule: **one CLO answers only one PI.**
+- Follow `CLAUDE.md`: the course types listed there, and the credit format X(Y-Z).
+- The program targets **TABEE under the Sydney Accord (ETAC)**, with submission planned for academic year 2570.
+- Use the RMUTT PI catalog (PI1.1–PI11.2, 23 PIs; texts and levels from the OBE3-TABEE template, stored in `tools/obe3_clo_pi.json` `pi_catalog`). Don't use the WA-style numbering.
+- **One CLO answers only one PI.**
 - Minimum assessments per PI:
   - PO1–3: at least 2 direct + 1 indirect.
   - PO4–11: at least 1 direct + 2 indirect.
-  - Count only courses that every student takes.
+  - Count only courses every student takes.
+- **Lecturers' OBE3 data takes precedence over Claude's draft rules** (the user asked to use the OBE3s).
 - PO→PLO mapping: PO1→PLO1, PO2→PLO4, PO3→PLO2, PO4→PLO4, PO5→PLO5, PO6/PO7/PO10→PLO8, PO8→PLO3, PO9→PLO6, PO11→PLO7.
-- Tables: the user prefers compact tables that fit one line per row, so drop a column rather than let it wrap.
+- Tables: the user prefers compact tables that fit one line per row.
+- The user wanted Excel output modeled on IE's "CLO-PLO Matrix IE" workbook (photos in `source_documents/LINE/`, e.g. S__8339462–64).
 
 ### Environment notes
-- **Thai PDF text:** `pdftotext` garbles it, so use PyMuPDF (`import pymupdf`) instead. Some slides are images only.
+- **Thai PDF text:** use PyMuPDF, not `pdftotext`.
+  - Some PDFs (the Manoch OBE3s) store tone marks as Private Use Area glyphs (U+F700–F71A). `tools/extract_obe3.py` maps them back (`THAI_PUA`).
+  - Line breaks in PDFs insert spaces into Thai text, so compare text with `norm()` in the matrix script.
 - **Legacy `.doc` files:** read them with `antiword -m UTF-8.txt`.
-- **Python:** use `python -I`. If printing Thai to the console fails with a cp1252 error, call `sys.stdout.reconfigure(encoding="utf-8")` (`-I` ignores `PYTHONIOENCODING`).
-- **Bash heredocs** containing Thai and quotes broke once. Write scripts with the Write tool instead.
-- **Matrix generator:** `tools/build_po_pi_clo_matrix.py` (it runs from any directory). It parses each course's CLO table and the `<tr><th>TABEE PO</th>` HTML row in its PLO Mapping table.
-- **Anchors:** CLO rows in course files now begin with `<a id="cloN"></a>`, so scripts that parse `| CLON |` must allow for that prefix. PO rows in `CPE_RMUTT68_TABEE_PO_Mapping.md` have `<a id="poN"></a>`. PLO anchors (`#ploN`) are in the Prospectus.
-- **Project skills** `/save-state` and `/recall-state` live in `.claude/skills/` and are tracked in git.
-- **Git in a OneDrive/SharePoint-synced folder:** commits can fail with `unable to append to '.git/logs/refs/heads/main'`. Fix it with `git config windows.appendAtomically false`. This is set in this clone's `.git/config` and must be set again in each new clone.
-- **Git identity:** Hedwig has no git `user.name` or `user.email` set. Commits there used `git -c user.name=thanasin -c user.email=thanasin.b@gmail.com commit ...`, matching the earlier commits. The user can set it permanently with `git config --global user.name/user.email`.
-- **Other PC only:** a Read-permission rule for the memory folder (`C:\Users\ADMIN\...`) exists only in that PC's `~/.claude/settings.json`. This PC (Hedwig, user `tolbo`) has no such rule and no project memory.
-- `source_documents/LINE/` holds phone screenshots, e.g. `S__8339462_0.jpg`, which is IE's "CLO-PLO Matrix IE" Excel sheet, the model for the PO–PI–CLO matrix.
+- **Python:** use `python -I`, and call `sys.stdout.reconfigure(encoding="utf-8")` before printing Thai.
+- **Excel on Hedwig:** Excel 16 is available through COM (PowerShell `New-Object -ComObject Excel.Application`). It was used to recalculate the workbook and scan for errors. LibreOffice is **not** installed, so the xlsx skill's `recalc.py` can't run.
+- **Bash heredocs** with Thai and quotes broke once. Write scripts with the Write tool, and don't paste emoji like ⚠️ into Python `str.replace` from a heredoc (the variation selector didn't match).
+- **Anchors:** CLO rows in course files start with `<a id="cloN"></a>`; PO rows in `CPE_RMUTT68_TABEE_PO_Mapping.md` have `<a id="poN"></a>`; PLO anchors (`#ploN`) are in the Prospectus.
+- **Project skills** `/save-state` and `/recall-state` live in `.claude/skills/`.
+- **Git (OneDrive folder):**
+  - set `git config windows.appendAtomically false` (repo-local, already set in this clone);
+  - Hedwig has no git identity, so commit with `git -c user.name=thanasin -c user.email=thanasin.b@gmail.com commit ...`;
+  - pushes can take more than 2 minutes while OneDrive syncs.
+- **Other PC only:** a memory-folder Read permission (`C:\Users\ADMIN\...`). Hedwig (user `tolbo`) has no project memory.
 
 ### Next steps
-1. Review the matrix with the committee and decide the gap fixes (open decisions 1–4).
-2. Once approved, add a PI column to each course file's CLO table, and split or reword the CLOs marked † and ⚑.
-3. Draft `CPE_RMUTT68_TABEE_PI_Reference.md` (CPE-adapted PI catalog; see `TABEE_PI_Analysis_Notes.md`).
-4. Update Prospectus §12 to name the Sydney Accord / ETAC track.
-5. Continue the Electronics 04-621-202 write-up into the `.doc`.
+1. Get answers to open decisions 1–2 (sync course files with OBE3s; Software Engineering code). If the user agrees, update the 6 course `.md` files and rebuild.
+2. Review the matrix, workbook and §3.1 findings with the committee, and decide the gap fixes (open decisions 3–7).
+3. As more OBE3s are collected, put them in `source_documents/` as `OBE 3_TABEE_<code>_<name>.pdf` and run the 3 tools in order.
+4. Draft `CPE_RMUTT68_TABEE_PI_Reference.md`, update Prospectus §12, and continue the Electronics `.doc` write-up.
 
 ## History
 ### 2026-11-03 (Hedwig)
@@ -92,6 +121,11 @@ _Last saved: 2026-11-03 20:55 by Hedwig_
   - added `<a id="poN"></a>` anchors to `CPE_RMUTT68_TABEE_PO_Mapping.md`;
   - added the SK1–SK9 table as matrix §1.2.
 - Moved the generator into the repo: `tools/build_po_pi_clo_matrix.py` and `tools/po_pi_clo_matrix_sections.md`. Its output is byte-identical to the committed matrix.
+- Commit `6821103` (linked matrix and in-repo generator).
+- Built the Excel workbook `CPE_RMUTT68_PO_PI_CLO_Matrix.xlsx` with `tools/build_po_pi_clo_xlsx.py`. It's formula-driven (CLO List → matrix and coverage) and was checked in Excel through COM.
+- Reviewed IE's PO1 sheet (`source_documents/LINE/S__8339463_0.jpg` and `S__8339464_0.jpg`). Each PI has its direct courses plus Student Exit Survey and Co-op Employer Survey as indirect rows, with an attainment % column. Added PO1–PO11 sheets in the same layout.
+- The user added 6 filled OBE3 PDFs to `source_documents/`. Added `tools/extract_obe3.py` → `tools/obe3_clo_pi.json` (PI catalog with levels, plus each course's CLO/PI/level/target/lecturer).
+- The matrix now uses the OBE3 data for those courses, and the generated §3.1 compares each OBE3 with its course file (CLOs matched by text similarity). Updated §4.1, §4.3, §4.4 and §4.5 in `tools/po_pi_clo_matrix_sections.md` for the new coverage.
 
 ### 2026-09-08
 
