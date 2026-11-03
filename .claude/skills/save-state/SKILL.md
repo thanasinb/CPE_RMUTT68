@@ -75,6 +75,8 @@ Rules:
 - If unrelated or half-finished changes are in the working tree, list them and ask the user whether to include them. Don't sweep them in silently.
 - Commit message: `Save session state: <short topic summary>`, ending with the attribution trailer required by the current session instructions.
 - If local is behind `origin/main`, run `git pull --rebase` before pushing. On a conflict in `Session_Log.md`, merge both sides by hand: keep both History entries, rebuild Current State from both, and then continue.
+- If the commit fails with "Author identity unknown", commit with the identity of the earlier commits (`git log -5 --format='%an <%ae>'`) via `git -c user.name=... -c user.email=... commit`. Don't change the global git config without asking.
+- If the commit fails with `unable to append to '.git/logs/...'` (a OneDrive/SharePoint-synced folder), run `git config windows.appendAtomically false` (repo-local) and retry.
 - Push to `origin main`. If the push fails (auth or network), tell the user the state is committed locally but NOT synced, and show the command to retry.
 
 ### 4. Report to the user

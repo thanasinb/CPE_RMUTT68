@@ -60,6 +60,8 @@ _Last saved: 2026-11-03 20:38 by Hedwig_
 - **Bash heredocs** containing Thai and quotes broke once. Write scripts with the Write tool instead.
 - **The matrix can be regenerated** by parsing the course files: CLO tables plus the `<tr><th>TABEE PO</th>` HTML row in each file's PLO Mapping table. The generator script was in a scratchpad and was not kept; the rules it used are in matrix §5.
 - **Project skills** `/save-state` and `/recall-state` live in `.claude/skills/` and are tracked in git.
+- **Git in a OneDrive/SharePoint-synced folder:** commits can fail with `unable to append to '.git/logs/refs/heads/main'`. Fix it with `git config windows.appendAtomically false`. This is set in this clone's `.git/config` and must be set again in each new clone.
+- **Git identity:** Hedwig has no git `user.name` or `user.email` set. Commits there used `git -c user.name=thanasin -c user.email=thanasin.b@gmail.com commit ...`, matching the earlier commits. The user can set it permanently with `git config --global user.name/user.email`.
 - **Other PC only:** a Read-permission rule for the memory folder (`C:\Users\ADMIN\...`) exists only in that PC's `~/.claude/settings.json`. This PC (Hedwig, user `tolbo`) has no such rule and no project memory.
 - `source_documents/LINE/` holds phone screenshots, e.g. `S__8339462_0.jpg`, which is IE's "CLO-PLO Matrix IE" Excel sheet, the model for the PO–PI–CLO matrix.
 
