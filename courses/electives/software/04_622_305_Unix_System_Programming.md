@@ -33,13 +33,13 @@ prerequisites: []
 
 | CLO | ผลลัพธ์การเรียนรู้ | PLOs |
 | --- | --- | --- |
-| CLO1 | สามารถอธิบายการทำงานของระบบปฏิบัติการเบื้องต้นได้ | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) |
-| CLO2 | เข้าใจการทำงานของ Shell ในชนิดต่างๆ | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) |
-| CLO3 | เข้าใจการทำงาน UNIX Process แบบเบื้องหน้า และเบื้องหลัง | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) |
-| CLO4 | สามารถใช้คำสั่งจัดการ และกำหนดสิทธิ์การเข้าถึง ไฟล์ และโฟลเดอร์ | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
-| CLO5 | สามารถเขียนโปรแกรม และกำหนดให้ Shell ทำงาน และตั้งเวลาทำงานอัตโนมัติ | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
-| CLO6 | สามารถเขียน Socket Program เพื่อติดต่อกับระบบภายนอก | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
-| CLO7 | สามารถวิเคราะห์ ออกแบบ และพัฒนาShell ตามโจทย์ปัญหา พร้อมนำเสนอ | [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4) |
+| <a id="clo1"></a>CLO1 | สามารถอธิบายการทำงานของระบบปฏิบัติการเบื้องต้นได้ | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) |
+| <a id="clo2"></a>CLO2 | เข้าใจการทำงานของ Shell ในชนิดต่างๆ | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) |
+| <a id="clo3"></a>CLO3 | เข้าใจการทำงาน UNIX Process แบบเบื้องหน้า และเบื้องหลัง | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) |
+| <a id="clo4"></a>CLO4 | สามารถใช้คำสั่งจัดการ และกำหนดสิทธิ์การเข้าถึง ไฟล์ และโฟลเดอร์ | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
+| <a id="clo5"></a>CLO5 | สามารถเขียนโปรแกรม และกำหนดให้ Shell ทำงาน และตั้งเวลาทำงานอัตโนมัติ | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
+| <a id="clo6"></a>CLO6 | สามารถเขียน Socket Program เพื่อติดต่อกับระบบภายนอก | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
+| <a id="clo7"></a>CLO7 | สามารถวิเคราะห์ ออกแบบ และพัฒนาShell ตามโจทย์ปัญหา พร้อมนำเสนอ | [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4) |
 
 ---
 

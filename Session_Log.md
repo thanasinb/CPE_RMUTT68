@@ -3,12 +3,14 @@
 Running log of work done with Claude Code in this repo, kept in git so it carries over between machines. Claude's own memory is per-PC and does not sync. Load it on another PC with /recall-state.
 
 ## Current State
-_Last saved: 2026-11-03 20:38 by Hedwig_
+_Last saved: 2026-11-03 20:55 by Hedwig_
 
 ### Active work
 - **TABEE PO–PI–CLO matrix (draft):** `CPE_RMUTT68_PO_PI_CLO_Matrix.md` covers all 64 courses and 295 CLOs.
   - The CLO→PO links come from the course files. The CLO→PI choices are Claude's proposal, following the rules in §5 of that file, and still need committee review.
   - It includes a coverage table against the TABEE direct/indirect minimums, issues (§4) and a proposed course for each PI's direct assessment (§4.5).
+  - Every PLO, PO, PI, SK and CLO in it is a link with a hover tooltip. There's an SK1–SK9 definitions table (§1.2).
+  - **Don't hand-edit the matrix. Regenerate it** with `python -I tools/build_po_pi_clo_matrix.py`. Edit the §4–5 text in `tools/po_pi_clo_matrix_sections.md`, and override single-CLO PI choices in the `OV`/`FLAG` dicts in the script.
 - **Sydney Accord curriculum review:** source documents have been reviewed. Findings and gaps in the CPE 2568 structure are in `TABEE_Sydney_Accord_Curriculum_Notes.md`.
 - **CPE-specific PI catalog analysis:** not started beyond analysis. See `TABEE_PI_Analysis_Notes.md`. Proposed output file: `CPE_RMUTT68_TABEE_PI_Reference.md`.
 - **04-621-202 Electronics course redesign:** CLO K/S/A and PI fixes, a 10-week plan and a bibliography are drafted but not yet written into the `.doc`. See `Electronics_04-621-202_Course_Design_Notes.md`.
@@ -58,7 +60,8 @@ _Last saved: 2026-11-03 20:38 by Hedwig_
 - **Legacy `.doc` files:** read them with `antiword -m UTF-8.txt`.
 - **Python:** use `python -I`. If printing Thai to the console fails with a cp1252 error, call `sys.stdout.reconfigure(encoding="utf-8")` (`-I` ignores `PYTHONIOENCODING`).
 - **Bash heredocs** containing Thai and quotes broke once. Write scripts with the Write tool instead.
-- **The matrix can be regenerated** by parsing the course files: CLO tables plus the `<tr><th>TABEE PO</th>` HTML row in each file's PLO Mapping table. The generator script was in a scratchpad and was not kept; the rules it used are in matrix §5.
+- **Matrix generator:** `tools/build_po_pi_clo_matrix.py` (it runs from any directory). It parses each course's CLO table and the `<tr><th>TABEE PO</th>` HTML row in its PLO Mapping table.
+- **Anchors:** CLO rows in course files now begin with `<a id="cloN"></a>`, so scripts that parse `| CLON |` must allow for that prefix. PO rows in `CPE_RMUTT68_TABEE_PO_Mapping.md` have `<a id="poN"></a>`. PLO anchors (`#ploN`) are in the Prospectus.
 - **Project skills** `/save-state` and `/recall-state` live in `.claude/skills/` and are tracked in git.
 - **Git in a OneDrive/SharePoint-synced folder:** commits can fail with `unable to append to '.git/logs/refs/heads/main'`. Fix it with `git config windows.appendAtomically false`. This is set in this clone's `.git/config` and must be set again in each new clone.
 - **Git identity:** Hedwig has no git `user.name` or `user.email` set. Commits there used `git -c user.name=thanasin -c user.email=thanasin.b@gmail.com commit ...`, matching the earlier commits. The user can set it permanently with `git config --global user.name/user.email`.
@@ -83,6 +86,12 @@ _Last saved: 2026-11-03 20:38 by Hedwig_
 - Created the project skills `.claude/skills/save-state/SKILL.md` and `.claude/skills/recall-state/SKILL.md`. Restructured this log into Current State and History.
 - Reviewed `source_documents/LINE/S__8339462_0.jpg` (IE's PO-PI-CLO Matrix sheet), then built `CPE_RMUTT68_PO_PI_CLO_Matrix.md` in the same layout and linked it from `README.md`, `Course_Index.md`, `CPE_RMUTT68_PLO_CLO_Matrix.md` and `CPE_RMUTT68_TABEE_PO_Mapping.md`.
 - Committed for the first time: `TABEE_PI_Analysis_Notes.md` and `Electronics_04-621-202_Course_Design_Notes.md`, both carried over from earlier sessions.
+- Commits `28f1862` and `b88af03` (the latter records the git identity and OneDrive reflog workarounds).
+- Added links with hover tooltips for every PLO, PO, PI, SK and CLO in the matrix (1,133 links, all checked):
+  - added `<a id="cloN"></a>` anchors to 295 CLO rows in all 64 course files;
+  - added `<a id="poN"></a>` anchors to `CPE_RMUTT68_TABEE_PO_Mapping.md`;
+  - added the SK1–SK9 table as matrix §1.2.
+- Moved the generator into the repo: `tools/build_po_pi_clo_matrix.py` and `tools/po_pi_clo_matrix_sections.md`. Its output is byte-identical to the committed matrix.
 
 ### 2026-09-08
 

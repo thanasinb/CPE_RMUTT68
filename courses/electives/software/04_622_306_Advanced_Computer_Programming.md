@@ -33,13 +33,13 @@ prerequisites: [04-621-101]
 
 | CLO | ผลลัพธ์การเรียนรู้ | PLOs |
 | --- | --- | --- |
-| CLO1 | มีเข้าใจไวยกรณ์ภาษา C# | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) |
-| CLO2 | เข้าใจส่วนติดต่อกับผู้ใช้โปรแกรม และการแสดงผลการทำงานแบบ Text Mode และ Graphics Mode | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) |
-| CLO3 | สามารถเขียนโปรแกรมแบบ Window | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
-| CLO4 | สามารถเขียนโปรแกรมเชื่อมต่อระบบฐานข้อมูล | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
-| CLO5 | สามารถเขียนโปรแกรมแบบ Web | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
-| CLO6 | สามารถเขียนโปรแกรมแบบ Web Service ในรูปแบบ XML SOAP และ RESTful | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
-| CLO7 | สามารถวิเคราะห์ ออกแบบ และพัฒนา โปรแกรม ด้วยภาษา C# ตามโจทย์ปัญหา | [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4) |
+| <a id="clo1"></a>CLO1 | มีเข้าใจไวยกรณ์ภาษา C# | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) |
+| <a id="clo2"></a>CLO2 | เข้าใจส่วนติดต่อกับผู้ใช้โปรแกรม และการแสดงผลการทำงานแบบ Text Mode และ Graphics Mode | [PLO1](../../../CPE_RMUTT68_Prospectus.md#plo1) |
+| <a id="clo3"></a>CLO3 | สามารถเขียนโปรแกรมแบบ Window | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
+| <a id="clo4"></a>CLO4 | สามารถเขียนโปรแกรมเชื่อมต่อระบบฐานข้อมูล | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
+| <a id="clo5"></a>CLO5 | สามารถเขียนโปรแกรมแบบ Web | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
+| <a id="clo6"></a>CLO6 | สามารถเขียนโปรแกรมแบบ Web Service ในรูปแบบ XML SOAP และ RESTful | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
+| <a id="clo7"></a>CLO7 | สามารถวิเคราะห์ ออกแบบ และพัฒนา โปรแกรม ด้วยภาษา C# ตามโจทย์ปัญหา | [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4) |
 
 ---
 
