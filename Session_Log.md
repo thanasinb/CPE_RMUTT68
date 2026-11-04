@@ -3,9 +3,13 @@
 Running log of work done with Claude Code in this repo, kept in git so it carries over between machines. Claude's own memory is per-PC and does not sync. Load it on another PC with /recall-state.
 
 ## Current State
-_Last saved: 2026-11-03 22:03 by Hedwig_
+_Last saved: 2026-11-04 12:48 by Hedwig_
 
 ### Active work
+- **TABEE assessment rules for the program committee (COET + ETAC SER-writing docs):** analysis done → `TABEE_COET_Documents_Notes.md`.
+  - §1–10 cover the COET folder (WA-based): criteria checklist, direct/indirect rules, capstone, Course Portfolio, site visit, IAB, and 12 CPE gaps.
+  - §11 covers `source_documents/เอกสาร SER Writing/`: `2. ETAC Seminar SER Preparation_NTK.pdf` and `2._ETAC_SER_รายงานประเมินตนเองของสถาบันการศึกษา.docx` (the ETAC SER template CPE should use). **ETAC rules override the WA docs where they differ.**
+  - Key ETAC rules: credits ≥120 total / ≥45 engineering / ≥24 GE, no math/science minimum; ≥210 h industrial practice; 1 PI ↔ exactly 1 SK; lean matrix (only courses that assess); per-PO/per-year assessment-plan table; **PI achievement = weighted sum, total indirect weight ≤ ½ of one direct weight** (IE example: 0.45×56% + 0.45×66% + 0.10×70% = 61.9% vs 60% target); 3-level CQI (lecturer / committee / IAB-IAC); example PEV document requests.
 - **TABEE PO–PI–CLO matrix (draft):** `CPE_RMUTT68_PO_PI_CLO_Matrix.md` and `CPE_RMUTT68_PO_PI_CLO_Matrix.xlsx` cover all 64 courses (294 CLOs).
   - **CLO→PI sources:**
     - For the **6 courses with a filled OBE3-TABEE** (04-621-101, 04-621-202, 04-622-201, 04-624-201, 04-000-301, 04-622-302), CLOs, PIs, CLO levels and targets come from the lecturer's OBE3 (tagged "(OBE3)").
@@ -37,6 +41,7 @@ _Last saved: 2026-11-03 22:03 by Hedwig_
 - **04-621-202 Electronics redesign:** see `Electronics_04-621-202_Course_Design_Notes.md`. The OBE3 PDF now shows CLO3 at K3 and CLO4 at K4, so some fixes from those notes have already been applied in the `.doc`.
 
 ### Open decisions (waiting on user)
+0. **🔴 Which curriculum/cohorts does the 2570 submission assess?** TABEE needs ≥2 graduating classes, and the CPE 2568 curriculum has no graduates by 2570. The ETAC IE example reports AY2568 PO data from "(63)" courses (2563 curriculum), i.e. the graduating cohorts' curriculum. Options: (a) submit 2570 on the previous CPE curriculum's courses/CLOs and build a second matrix for it; (b) ask TABEE about provisional/new-program accreditation; (c) delay submission until the 2568 curriculum has 2 graduating classes. Claude asked; no answer yet. Details in `TABEE_COET_Documents_Notes.md` §3 and §11.
 1. **Update the course `.md` files to match the 6 OBE3s**, so repo CLOs agree with the lecturers' syllabi? Claude asked and has no answer yet. The differences are in matrix §3.1:
    - Software Engineering adds a new CLO1, drops the old CLO1–2 and renumbers the rest;
    - 04-000-301 has 3 entirely new CLOs;
@@ -54,6 +59,8 @@ _Last saved: 2026-11-03 22:03 by Hedwig_
 8. **Electronics `.doc` write-up** (from earlier sessions), and the PI10.1 domain question (K3 / A4 / S3–S4).
 9. **Update Prospectus §12** to state the Sydney Accord / ETAC track?
 10. **Indirect assessment:** adopt IE's model of 2 program-wide surveys (Student Exit Survey and Co-op Employer Survey) for every PI? The questions must target each PO.
+11. **Make the workbook's PI attainment % formula-driven** using the ETAC weighting rule (indirect total ≤ ½ of one direct)? Currently a plain input on the PO1–PO11 sheets. Claude offered; no answer yet.
+12. **Make a committee-facing page/doc from `TABEE_COET_Documents_Notes.md` §10 (12 gaps)?** Offered, not accepted.
 
 ### Concerns / risks
 - **OBE3 quality problems** (matrix §3.1):
@@ -61,10 +68,12 @@ _Last saved: 2026-11-03 22:03 by Hedwig_
   - PI levels typed incorrectly: Electronics PI2.1 as K5 and PI6.1 as A4; Data Structure PI1.2 as K4.
   - 04-000-301 CLO1 is A2 but is mapped to PI7.1 (S3).
 - PO8 CLOs talk about "applying to other disciplines", but none asks students to judge impacts (ให้ความเห็นเกี่ยวกับผลกระทบ).
-- To submit in 2570, at least 2 consecutive years of PO assessment data are needed, so collection must start by 2568–2569.
+- To submit in 2570, at least 2 consecutive years of PO assessment data are needed, so collection must start by 2568–2569. **Combined with open decision 0, the current 2568-curriculum matrix may not be what gets assessed in 2570.**
+- Annual TABEE cycle: SER due week 1 of May → visit Nov–Dec → decision March → result May.
+- Capstone must show PO2/3/4/6/7; 04-620-401 has no PO3/PO4 CLO. Co-op can count as capstone evidence (SER item 5-1.6) only with an equivalence plan, judged against the broadly-defined definition.
 - Template bug: `OBE3_TABEE.doc` labels PI11.2 as "PO12". It belongs under PO11.
 - Unconfirmed:
-  - whether broadly-defined problems need at least 4 SP characteristics;
+  - whether broadly-defined problems need a minimum number of characteristics (the Manual lists 8 broadly-defined characteristics, which differ from SP1–SP7, and states no minimum);
   - whether the Council of Engineers recognises Sydney Accord degrees for licensing.
 - `source_documents/` is git-ignored. Back up `.doc` files before editing them.
 
@@ -99,12 +108,21 @@ _Last saved: 2026-11-03 22:03 by Hedwig_
 - **Other PC only:** a memory-folder Read permission (`C:\Users\ADMIN\...`). Hedwig (user `tolbo`) has no project memory.
 
 ### Next steps
-1. Get answers to open decisions 1–2 (sync course files with OBE3s; Software Engineering code). If the user agrees, update the 6 course `.md` files and rebuild.
-2. Review the matrix, workbook and §3.1 findings with the committee, and decide the gap fixes (open decisions 3–7).
-3. As more OBE3s are collected, put them in `source_documents/` as `OBE 3_TABEE_<code>_<name>.pdf` and run the 3 tools in order.
-4. Draft `CPE_RMUTT68_TABEE_PI_Reference.md`, update Prospectus §12, and continue the Electronics `.doc` write-up.
+1. Get the answer to open decision 0 (curriculum/cohorts for 2570). If (a), collect the previous CPE curriculum's course list and CLOs and build a second PO-PI-CLO matrix with the same tools.
+2. Optionally add the ETAC weighted PI-attainment formula to `tools/build_po_pi_clo_xlsx.py` (open decision 11), and align the matrix with ETAC's "1 PI ↔ 1 SK" and lean-matrix rules.
+3. Get answers to open decisions 1–2 (sync course files with OBE3s; Software Engineering code). If the user agrees, update the 6 course `.md` files and rebuild.
+4. Review the matrix, workbook and §3.1 findings with the committee, and decide the gap fixes (open decisions 3–7).
+5. As more OBE3s are collected, put them in `source_documents/` as `OBE 3_TABEE_<code>_<name>.pdf` and run the 3 tools in order.
+6. Draft `CPE_RMUTT68_TABEE_PI_Reference.md`, update Prospectus §12, and continue the Electronics `.doc` write-up.
 
 ## History
+### 2026-11-04 (Hedwig)
+- Recalled state with `/recall-state`.
+- Reviewed the TABEE documents in `source_documents/` COET folder from the program-committee perspective (criteria, assessment rules, capstone, Course Portfolio, site visit, IAB). Wrote `TABEE_COET_Documents_Notes.md` §1–10, including 12 gaps for CPE.
+- Reviewed `source_documents/เอกสาร SER Writing/` (ETAC seminar deck by รศ.ดร.ณฐา + ETAC SER template). Added §11 (WA vs ETAC differences, 9 concrete ETAC rules, IE's use of 2563-curriculum data) and updated the §4 Criterion 5 row.
+- Raised the curriculum-version problem (open decision 0).
+- Extraction used PyMuPDF for PDFs and zipfile+regex for the `.docx`; extracted text lived only in the session scratchpad (not kept).
+
 ### 2026-11-03 (Hedwig)
 - Recalled the previous state from `Session_Log.md` and the two untracked notes files.
 - Reviewed all `source_documents/` training material for Sydney Accord curriculum design: the SPP and ศ.สมศักดิ์ workshop decks, the NK deck, the SER manual and the capstone deck. Wrote `TABEE_Sydney_Accord_Curriculum_Notes.md`, covering:
