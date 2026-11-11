@@ -3,9 +3,15 @@
 Running log of work done with Claude Code in this repo, kept in git so it carries over between machines. Claude's own memory is per-PC and does not sync. Load it on another PC with /recall-state.
 
 ## Current State
-_Last saved: 2026-11-04 12:48 by Hedwig_
+_Last saved: 2026-11-11 22:11 by DESKTOP-P9E7MNF_
 
 ### Active work
+- **Sub-PLOs (done, commit `1f294ad`):** PLO4 and PLO8 are replaced in **all** CLO mappings by sub-PLOs, so each TABEE PO maps to exactly one PLO:
+  - PLO4.1→PO2, PLO4.2→PO4, PLO8.1→PO6, PLO8.2→PO7, PLO8.3→PO10.
+  - The full breakdown (parent PLO4/PLO8 text unchanged, in bold, with ↳ sub-rows and a TABEE PO column) is in `CPE_RMUTT68_Prospectus.md` §3. Anchors are `#plo4-1` … `#plo8-3`.
+  - Changed together: the 64 course files (`plos:` frontmatter, CLO-table links, PLO responsibility table, HTML PLO Mapping header, TABEE PO table), `CPE_RMUTT68_PLO_CLO_Matrix.md`, `CPE_RMUTT68_TABEE_PO_Mapping.md`, `README.md`, and `tools/build_po_pi_clo_matrix.py` (`PO_PLO` now uses string keys like `'4.1'`; it asserts 13 PLO anchors in the Prospectus).
+  - The YLO table (Prospectus §4) was deliberately left at parent level (PLO4, PLO8). `Old_PLO.md` and `PO_Mapping_Review/` are historical and were not changed.
+  - The one-off migration script was not kept in the repo; it must not be re-run.
 - **TABEE assessment rules for the program committee (COET + ETAC SER-writing docs):** analysis done → `TABEE_COET_Documents_Notes.md`.
   - §1–10 cover the COET folder (WA-based): criteria checklist, direct/indirect rules, capstone, Course Portfolio, site visit, IAB, and 12 CPE gaps.
   - §11 covers `source_documents/เอกสาร SER Writing/`: `2. ETAC Seminar SER Preparation_NTK.pdf` and `2._ETAC_SER_รายงานประเมินตนเองของสถาบันการศึกษา.docx` (the ETAC SER template CPE should use). **ETAC rules override the WA docs where they differ.**
@@ -61,12 +67,18 @@ _Last saved: 2026-11-04 12:48 by Hedwig_
 10. **Indirect assessment:** adopt IE's model of 2 program-wide surveys (Student Exit Survey and Co-op Employer Survey) for every PI? The questions must target each PO.
 11. **Make the workbook's PI attainment % formula-driven** using the ETAC weighting rule (indirect total ≤ ½ of one direct)? Currently a plain input on the PO1–PO11 sheets. Claude offered; no answer yet.
 12. **Make a committee-facing page/doc from `TABEE_COET_Documents_Notes.md` §10 (12 gaps)?** Offered, not accepted.
+13. **18 CLOs map to more than one sub-PLO**, which breaks "one CLO → one PLO". They are kept as they were (shown as e.g. `PLO8.1, PLO8.2`):
+    - PLO4.1 + 4.2: 04-624-302 CLO5, 04-621-403 CLO3, 04-621-404 CLO3, 04-622-307 CLO4, 04-622-401 CLO5.
+    - PLO8.1 + 8.2: the 13 standard "teamwork + communication" CLOs (e.g. 04-620-303 CLO6, 04-620-401 CLO6, 04-621-302 CLO6, 04-000-302/303/401/402 CLO4).
+    - 04-620-302 CLO6 maps to all of PLO8.1, 8.2 and 8.3.
+    - Options: Claude proposes a split or a single sub-PLO per CLO, or flag them ⚑ for the lecturers. Claude asked; no answer yet.
 
 ### Concerns / risks
 - **OBE3 quality problems** (matrix §3.1):
   - CLO levels below the PI level: PI3.1 (K6) gets K3 CLOs from 04-621-202, 04-624-201 and 04-622-302; PI1.1 (K3) gets K2 from Electronics CLO1–2; PI9.1 (A3) gets A1 from 04-622-302 CLO5 and 04-000-301 CLO2.
   - PI levels typed incorrectly: Electronics PI2.1 as K5 and PI6.1 as A4; Data Structure PI1.2 as K4.
   - 04-000-301 CLO1 is A2 but is mapped to PI7.1 (S3).
+- **PO4 and PO10 are thin at PLO level:** PLO4.2 has only the 5 shared CLOs above, and PLO8.3 has only 04-620-302 CLO6. This matches the PO-PI-CLO coverage gaps.
 - PO8 CLOs talk about "applying to other disciplines", but none asks students to judge impacts (ให้ความเห็นเกี่ยวกับผลกระทบ).
 - To submit in 2570, at least 2 consecutive years of PO assessment data are needed, so collection must start by 2568–2569. **Combined with open decision 0, the current 2568-curriculum matrix may not be what gets assessed in 2570.**
 - Annual TABEE cycle: SER due week 1 of May → visit Nov–Dec → decision March → result May.
@@ -87,7 +99,8 @@ _Last saved: 2026-11-04 12:48 by Hedwig_
   - PO4–11: at least 1 direct + 2 indirect.
   - Count only courses every student takes.
 - **Lecturers' OBE3 data takes precedence over Claude's draft rules** (the user asked to use the OBE3s).
-- PO→PLO mapping: PO1→PLO1, PO2→PLO4, PO3→PLO2, PO4→PLO4, PO5→PLO5, PO6/PO7/PO10→PLO8, PO8→PLO3, PO9→PLO6, PO11→PLO7.
+- PO→PLO mapping is 1:1: PO1→PLO1, PO2→PLO4.1, PO3→PLO2, PO4→PLO4.2, PO5→PLO5, PO6→PLO8.1, PO7→PLO8.2, PO8→PLO3, PO9→PLO6, PO10→PLO8.3, PO11→PLO7.
+- **Map CLOs only to sub-PLOs, never to parent PLO4 or PLO8** (the user's instruction). Keep the parent texts only in the Prospectus §3 breakdown table.
 - Tables: the user prefers compact tables that fit one line per row.
 - The user wanted Excel output modeled on IE's "CLO-PLO Matrix IE" workbook (photos in `source_documents/LINE/`, e.g. S__8339462–64).
 
@@ -97,6 +110,7 @@ _Last saved: 2026-11-04 12:48 by Hedwig_
   - Line breaks in PDFs insert spaces into Thai text, so compare text with `norm()` in the matrix script.
 - **Legacy `.doc` files:** read them with `antiword -m UTF-8.txt`.
 - **Python:** use `python -I`, and call `sys.stdout.reconfigure(encoding="utf-8")` before printing Thai.
+- **DESKTOP-P9E7MNF:** has a git identity (thanasin), PyMuPDF 1.28, openpyxl 3.1.5, antiword, and Excel 16 through COM. Iterating over every cell through COM made Excel disconnect (`RPC_E_DISCONNECTED`). What works: open the workbook, `CalculateFull()`, `Save()` in Excel, then scan the cached values with openpyxl (`data_only=True`). `core.autocrlf=true` prints LF→CRLF warnings on every `git` command; they are harmless (the files are LF in the repo).
 - **Excel on Hedwig:** Excel 16 is available through COM (PowerShell `New-Object -ComObject Excel.Application`). It was used to recalculate the workbook and scan for errors. LibreOffice is **not** installed, so the xlsx skill's `recalc.py` can't run.
 - **Bash heredocs** with Thai and quotes broke once. Write scripts with the Write tool, and don't paste emoji like ⚠️ into Python `str.replace` from a heredoc (the variation selector didn't match).
 - **Anchors:** CLO rows in course files start with `<a id="cloN"></a>`; PO rows in `CPE_RMUTT68_TABEE_PO_Mapping.md` have `<a id="poN"></a>`; PLO anchors (`#ploN`) are in the Prospectus.
@@ -108,6 +122,7 @@ _Last saved: 2026-11-04 12:48 by Hedwig_
 - **Other PC only:** a memory-folder Read permission (`C:\Users\ADMIN\...`). Hedwig (user `tolbo`) has no project memory.
 
 ### Next steps
+0. Resolve open decision 13 (the 18 CLOs mapped to more than one sub-PLO). This also affects coverage for PO4 and PO10.
 1. Get the answer to open decision 0 (curriculum/cohorts for 2570). If (a), collect the previous CPE curriculum's course list and CLOs and build a second PO-PI-CLO matrix with the same tools.
 2. Optionally add the ETAC weighted PI-attainment formula to `tools/build_po_pi_clo_xlsx.py` (open decision 11), and align the matrix with ETAC's "1 PI ↔ 1 SK" and lean-matrix rules.
 3. Get answers to open decisions 1–2 (sync course files with OBE3s; Software Engineering code). If the user agrees, update the 6 course `.md` files and rebuild.
@@ -116,6 +131,16 @@ _Last saved: 2026-11-04 12:48 by Hedwig_
 6. Draft `CPE_RMUTT68_TABEE_PI_Reference.md`, update Prospectus §12, and continue the Electronics `.doc` write-up.
 
 ## History
+### 2026-11-11 (DESKTOP-P9E7MNF)
+- Recalled state with `/recall-state` (first session on this PC; it was already in sync with `origin/main`).
+- At the user's request, split PLO4 (PO2 + PO4) and PLO8 (PO6 + PO7 + PO10) into sub-PLOs PLO4.1–4.2 and PLO8.1–8.3, one PO each.
+  - The user chose to replace the parent PLOs with the sub-PLOs everywhere a CLO is mapped, and to keep the full breakdown in the PLO list (Prospectus §3).
+  - The sub-PLO wording follows the RMUTT PI texts; PLO8.2 adds "ทั้งภาษาไทยและภาษาอังกฤษ" to cover PI7.2.
+- The CLO→sub-PLO assignment came from the per-PO ticks already in each course's HTML PLO Mapping table (added in July, `fdbf80e`). The conversion covered all 295 CLOs with no inconsistencies.
+- Rebuilt the PO-PI-CLO `.md` and `.xlsx`. Excel recalculated the workbook: 3,542 formulas, 0 errors.
+- Found 18 CLOs that map to more than one sub-PLO, and that PO4 and PO10 have very few CLOs (open decision 13).
+- Commit `1f294ad` (pushed).
+
 ### 2026-11-04 (Hedwig)
 - Recalled state with `/recall-state`.
 - Reviewed the TABEE documents in `source_documents/` COET folder from the program-committee perspective (criteria, assessment rules, capstone, Course Portfolio, site visit, IAB). Wrote `TABEE_COET_Documents_Notes.md` §1–10, including 12 gaps for CPE.
