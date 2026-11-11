@@ -6,7 +6,7 @@ credits: 3(2-3)
 type: กลุ่มวิชาเลือก
 year: N/A (elective)
 semester: N/A
-plos: PLO2, PLO3, PLO4, PLO5, PLO6
+plos: PLO2, PLO3, PLO4.1, PLO5, PLO6
 prerequisites: [04-621-204]
 ---
 
@@ -35,7 +35,7 @@ prerequisites: [04-621-204]
 | --- | --- | --- |
 | <a id="clo1"></a>CLO1 | สามารถอธิบายอัลกอริทึมการเรียนรู้ของเครื่องที่ใช้ในงานการประมวลผลที่ขอบ | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
 | <a id="clo2"></a>CLO2 | สามารถประยุกต์นำข้อมูลจากเซนเซอร์หรือรูปภาพมาฝึกสอนด้วยหลักการเรียนรู้ของเครื่อง | [PLO3](../../../CPE_RMUTT68_Prospectus.md#plo3) |
-| <a id="clo3"></a>CLO3 | สามารถวิเคราะห์ปัญหาและเลือกใช้อัลกริทึมการเรียนรู้ของเครื่องขนาดเล็กที่เหมาะสมกับอุปกรณ์การประมวลที่ขอบแต่ละชนิดตามความเหมาะสม | [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4) |
+| <a id="clo3"></a>CLO3 | สามารถวิเคราะห์ปัญหาและเลือกใช้อัลกริทึมการเรียนรู้ของเครื่องขนาดเล็กที่เหมาะสมกับอุปกรณ์การประมวลที่ขอบแต่ละชนิดตามความเหมาะสม | [PLO4.1](../../../CPE_RMUTT68_Prospectus.md#plo4-1) |
 | <a id="clo4"></a>CLO4 | สามารถใช้เครื่องมือที่เหมาะสมในการออกแบบและพัฒนาโปรแกรมสำหรับการเรียนรู้ของเครื่องขนาดเล็กและสามารถวิเคราะห์แนวทางการเพิ่มประสิทธิภาพในการประมวลผลการเรียนรู้ของเครื่องที่อุปกรณ์ประมวลผลที่ขอบ | [PLO5](../../../CPE_RMUTT68_Prospectus.md#plo5) |
 | <a id="clo5"></a>CLO5 | แสดงออกถึงความซื่อสัตย์ มีจรรยาบรรณทางวิชาการ มีวินัย ตรงต่อเวลา | [PLO6](../../../CPE_RMUTT68_Prospectus.md#plo6) |
 
@@ -47,7 +47,7 @@ prerequisites: [04-621-204]
 | --- | :---: | :---: | :---: | :---: |
 | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2): ใช้ความรู้และทักษะ ในเชิงทฤษฎีและปฏิบัติ เพื่อแก้ไขปัญหาด้านวิศวกรรมคอมพิวเตอร์ได้ | ✓ |  |  |  |
 | [PLO3](../../../CPE_RMUTT68_Prospectus.md#plo3): บูรณาการความรู้ในสาขาวิศวกรรมคอมพิวเตอร์เพื่อแก้ไขปัญหาให้กับอุตสาหกรรมหรือชุมชน เพื่อการพัฒนาที่ยั่งยืน | ✓ |  |  |  |
-| [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4): คิดวิเคราะห์อย่างเป็นระบบ สืบค้นและทดลองเพื่อพัฒนาระบบงานทางด้านวิศวกรรมคอมพิวเตอร์ได้อย่างเป็นขั้นตอน |  | ✓ |  |  |
+| [PLO4.1](../../../CPE_RMUTT68_Prospectus.md#plo4-1): ระบุ กำหนด และวิเคราะห์ปัญหาทางวิศวกรรมคอมพิวเตอร์อย่างเป็นระบบ โดยค้นคว้าข้อมูลที่เกี่ยวข้อง เพื่อหาแนวทางแก้ไขเบื้องต้นได้ |  | ✓ |  |  |
 | [PLO5](../../../CPE_RMUTT68_Prospectus.md#plo5): ใช้เครื่องมือทางด้านวิศวกรรมคอมพิวเตอร์ได้อย่างถูกต้องเหมาะสม |  | ✓ |  |  |
 | [PLO6](../../../CPE_RMUTT68_Prospectus.md#plo6): อธิบายจรรยาบรรณวิชาชีพได้ มีความตรงต่อเวลา |  |  | ✓ |  |
 
@@ -63,11 +63,14 @@ prerequisites: [04-621-204]
 <th><a href="../../../CPE_RMUTT68_Prospectus.md#plo1">PLO1</a></th>
 <th><a href="../../../CPE_RMUTT68_Prospectus.md#plo2">PLO2</a></th>
 <th><a href="../../../CPE_RMUTT68_Prospectus.md#plo3">PLO3</a></th>
-<th colspan="2"><a href="../../../CPE_RMUTT68_Prospectus.md#plo4">PLO4</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo4-1">PLO4.1</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo4-2">PLO4.2</a></th>
 <th><a href="../../../CPE_RMUTT68_Prospectus.md#plo5">PLO5</a></th>
 <th><a href="../../../CPE_RMUTT68_Prospectus.md#plo6">PLO6</a></th>
 <th><a href="../../../CPE_RMUTT68_Prospectus.md#plo7">PLO7</a></th>
-<th colspan="3"><a href="../../../CPE_RMUTT68_Prospectus.md#plo8">PLO8</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo8-1">PLO8.1</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo8-2">PLO8.2</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo8-3">PLO8.3</a></th>
 </tr>
 <tr>
 <th>TABEE PO</th>
@@ -161,9 +164,9 @@ prerequisites: [04-621-204]
 
 ตารางแสดงความสัมพันธ์ระหว่าง PLO ของรายวิชานี้กับ TABEE Program Outcomes (PO) ตาม Sydney Accord อ้างอิงจาก [CPE_RMUTT68_TABEE_PO_Mapping.md](../../CPE_RMUTT68_TABEE_PO_Mapping.md)
 
-| PLO ที่เกี่ยวข้อง | PLO1 | PLO4 | PLO2 | PLO4 | PLO5 | PLO8 | PLO8 | PLO3 | PLO6 | PLO8 | PLO7 |
+| PLO ที่เกี่ยวข้อง | PLO1 | PLO4.1 | PLO2 | PLO4.2 | PLO5 | PLO8.1 | PLO8.2 | PLO3 | PLO6 | PLO8.3 | PLO7 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| รายวิชา |  | ● | ● | ● | ● |  |  | ● | ● |  |  |
+| รายวิชา |  | ● | ● |  | ● |  |  | ● | ● |  |  |
 | TABEE PO | PO1 | PO2 | PO3 | PO4 | PO5 | PO6 | PO7 | PO8 | PO9 | PO10 | PO11 |
 
 ---

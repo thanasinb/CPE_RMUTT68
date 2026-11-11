@@ -39,7 +39,8 @@ def parse_courses():
 
 C = parse_courses()
 PIS = ['1.1','1.2','1.3','1.4','2.1','2.2','2.3','2.4','3.1','4.1','4.2','5.1','5.2','6.1','7.1','7.2','8.1','8.2','8.3','9.1','10.1','11.1','11.2']
-PO_PLO = {1:1,2:4,3:2,4:4,5:5,6:8,7:8,8:3,9:6,10:8,11:7}
+# PO -> PLO, 1:1 via the sub-PLOs PLO4.1-4.2 and PLO8.1-8.3 (Prospectus §3)
+PO_PLO = {1:'1',2:'4.1',3:'2',4:'4.2',5:'5',6:'8.1',7:'8.2',8:'3',9:'6',10:'8.3',11:'7'}
 PI_DESC = {
 '1.1':('SK1','ประยุกต์หลักการวิทยาศาสตร์ธรรมชาติ (ฟิสิกส์) ในขั้นตอน/กระบวนการ/ระบบทางวิศวกรรม'),
 '1.2':('SK2','ใช้คณิตศาสตร์ การวิเคราะห์เชิงตัวเลข สถิติ วิทยาการคอมพิวเตอร์ เพื่อพิจารณาหรือใช้แบบจำลอง'),
@@ -155,10 +156,11 @@ GROUPS = [('foundation','กลุ่มวิชาพื้นฐาน'),('co
           ('electives/network','กลุ่มวิชาเลือก: Network'),('electives/software','กลุ่มวิชาเลือก: Software')]
 # ---- link helpers (descriptions read from the repo files so tooltips stay in sync) ----
 PROS = open('CPE_RMUTT68_Prospectus.md', encoding='utf-8').read()
-PLO_TXT = {int(n): t.strip() for n, t in re.findall(r'<a id="plo(\d+)"></a>PLO\d+ \| (.*?) \|', PROS)}
+PLO_TXT = {n.replace('-', '.'): t.strip().strip('*') for n, t in
+           re.findall(r'<a id="plo([\d-]+)"></a>\**PLO[\d.]+\** \| (.*?) \|', PROS)}
 POM = open('CPE_RMUTT68_TABEE_PO_Mapping.md', encoding='utf-8').read()
 PO_TXT = {int(n): t.strip() for n, t in re.findall(r'<a id="po(\d+)"></a>\*\*PO\d+\*\* \| (.*?) \|', POM)}
-assert len(PLO_TXT) == 8 and len(PO_TXT) == 11, (len(PLO_TXT), len(PO_TXT))
+assert len(PLO_TXT) == 13 and set(PO_PLO.values()) <= set(PLO_TXT) and len(PO_TXT) == 11, (len(PLO_TXT), len(PO_TXT))
 SK = {
  'SK1': ('Natural and Social Sciences', 'ความเข้าใจทฤษฎีด้านวิทยาศาสตร์ธรรมชาติอย่างเป็นระบบที่เหมาะสมกับสาขาและ/หรือแขนงของความชำนาญทางวิศวกรรม และการตระหนักถึงด้านสังคมศาสตร์ที่เกี่ยวข้อง', 'A systematic, theory-based understanding of the natural sciences applicable to the sub-discipline and awareness of relevant social sciences'),
  'SK2': ('Mathematics', 'แนวคิดทางคณิตศาสตร์ การวิเคราะห์เชิงตัวเลข การวิเคราะห์ข้อมูล สถิติ วิทยาการคอมพิวเตอร์และวิทยาการสารสนเทศ เพื่อสนับสนุนการพิจารณาอย่างละเอียด และการใช้แบบจำลองที่เหมาะสมกับสาขาและ/หรือแขนงของความชำนาญทางวิศวกรรม', 'Conceptually-based mathematics, numerical analysis, data analysis, statistics and formal aspects of computer and information science to support detailed consideration and use of models applicable to the sub-discipline'),
@@ -172,7 +174,7 @@ SK = {
 }
 def tip(s): return s.replace('"', "'").replace('|', '/')
 def pid(p): return 'pi' + p.replace('.', '-')
-def lplo(n): return f'[PLO{n}](CPE_RMUTT68_Prospectus.md#plo{n} "{tip(PLO_TXT[n])}")'
+def lplo(n): return f'[PLO{n}](CPE_RMUTT68_Prospectus.md#plo{n.replace(".", "-")} "{tip(PLO_TXT[n])}")'
 def lpo(n): return f'[PO{n}](CPE_RMUTT68_TABEE_PO_Mapping.md#po{n} "{tip(PO_TXT[n])}")'
 def lpi(p): return f'[PI{p}](#{pid(p)} "{tip(PI_DESC[p][1])}")'
 def lsk(s): return f'[{s}](#{s.lower()} "{tip(SK[s][0])}")'
@@ -287,7 +289,7 @@ def linkify(s):
     s = re.sub(r'(04-\d{3}-\d{3})( \| | )CLO(\d+)', clo, s)
     s = re.sub(r'^\| (\d+\.\d+) \|', lambda m: '| ' + stash_str(lpi(m.group(1))) + ' |' if m.group(1) in PIS else m.group(0), s, flags=re.M)
     s = re.sub(r'(?<![\w#\[/])PI(\d+\.\d+)', lambda m: stash_str(lpi(m.group(1))) if m.group(1) in PIS else m.group(0), s)
-    s = re.sub(r'(?<![\w#\[/])PLO(\d+)\b', lambda m: stash_str(lplo(int(m.group(1)))) if int(m.group(1)) in PLO_TXT else m.group(0), s)
+    s = re.sub(r'(?<![\w#\[/])PLO(\d+(?:\.\d+)?)\b', lambda m: stash_str(lplo(m.group(1))) if m.group(1) in PLO_TXT else m.group(0), s)
     s = re.sub(r'(?<![\w#\[/])PO(\d+)\b', lambda m: stash_str(lpo(int(m.group(1)))) if int(m.group(1)) in PO_TXT else m.group(0), s)
     s = re.sub(r'(?<![\w#\[/])SK(\d)\b', lambda m: stash_str(lsk('SK' + m.group(1))) if 'SK' + m.group(1) in SK else m.group(0), s)
     return re.sub(r'\x00(\d+)\x00', lambda m: keep[int(m.group(1))], re.sub(r'\x00(\d+)\x00', lambda m: keep[int(m.group(1))], s))

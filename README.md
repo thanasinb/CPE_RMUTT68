@@ -68,9 +68,11 @@ credits: 1(0-3)
 type: กลุ่มวิชาพื้นฐาน
 year: 2
 semester: 1
-plos: PLO2, PLO4, PLO5, PLO8
+plos: PLO2, PLO4.1, PLO5, PLO8.1, PLO8.2
 ---
 ```
+
+`plos` ใช้ PLO ย่อย (PLO4.1–4.2, PLO8.1–8.3) แทน PLO4 และ PLO8 เพื่อให้ PLO แต่ละข้อแมปกับ TABEE PO เพียงข้อเดียว ดู [Prospectus §3](CPE_RMUTT68_Prospectus.md#plos)
 
 และมีเนื้อหา:
 - คำอธิบายรายวิชา (ไทย/อังกฤษ)

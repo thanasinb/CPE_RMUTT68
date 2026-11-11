@@ -6,7 +6,7 @@ credits: 3(1-6)
 type: กลุ่มวิชาบังคับ
 year: 4
 semester: 2
-plos: PLO3, PLO4, PLO5, PLO6, PLO7, PLO8
+plos: PLO3, PLO4.1, PLO5, PLO6, PLO7, PLO8.1, PLO8.2
 prerequisites: [04-620-303]
 ---
 
@@ -34,11 +34,11 @@ prerequisites: [04-620-303]
 | CLO | ผลลัพธ์การเรียนรู้ | PLOs |
 | --- | --- | --- |
 | <a id="clo1"></a>CLO1 | สามารถส่งผลงานของโครงงานหรือผลงานวิจัยและปริญญานิพนธ์ฉบับสมบูรณ์หรือบทความทางวิชาการหรือวารสารทางวิชาการ | [PLO3](../../CPE_RMUTT68_Prospectus.md#plo3) |
-| <a id="clo2"></a>CLO2 | สามารถวิเคราะห์และออกแบบระบบทางวิศวกรรมคอมพิวเตอร์ตามโจทย์ที่กำหนดได้ | [PLO4](../../CPE_RMUTT68_Prospectus.md#plo4) |
+| <a id="clo2"></a>CLO2 | สามารถวิเคราะห์และออกแบบระบบทางวิศวกรรมคอมพิวเตอร์ตามโจทย์ที่กำหนดได้ | [PLO4.1](../../CPE_RMUTT68_Prospectus.md#plo4-1) |
 | <a id="clo3"></a>CLO3 | สามารถใช้เครื่องมือที่เกี่ยวข้องได้อย่างถูกต้องและปลอดภัย | [PLO5](../../CPE_RMUTT68_Prospectus.md#plo5) |
 | <a id="clo4"></a>CLO4 | นำเสนอรายงานความคืบหน้าของงานอย่างสม่ำเสมอ | [PLO6](../../CPE_RMUTT68_Prospectus.md#plo6) |
 | <a id="clo5"></a>CLO5 | สามารถศึกษาเทคโนโลยีใหม่ ๆ เพื่อให้โครงงานประสบความสำเร็จ | [PLO7](../../CPE_RMUTT68_Prospectus.md#plo7) |
-| <a id="clo6"></a>CLO6 | สามารถทำงานเป็นทีม สามารถสื่อสารและแสดงความคิดเห็นได้อย่างสร้างสรรค์ | [PLO8](../../CPE_RMUTT68_Prospectus.md#plo8) |
+| <a id="clo6"></a>CLO6 | สามารถทำงานเป็นทีม สามารถสื่อสารและแสดงความคิดเห็นได้อย่างสร้างสรรค์ | [PLO8.1](../../CPE_RMUTT68_Prospectus.md#plo8-1), [PLO8.2](../../CPE_RMUTT68_Prospectus.md#plo8-2) |
 
 ---
 
@@ -47,11 +47,12 @@ prerequisites: [04-620-303]
 | ผลลัพธ์การเรียนรู้ของหลักสูตร (PLOs) | ความรู้ (K) | ทักษะ (S) | จริยธรรม (E) | ลักษณะบุคคล (C) |
 | --- | :---: | :---: | :---: | :---: |
 | [PLO3](../../CPE_RMUTT68_Prospectus.md#plo3): บูรณาการความรู้ในสาขาวิศวกรรมคอมพิวเตอร์เพื่อแก้ไขปัญหาให้กับอุตสาหกรรมหรือชุมชน เพื่อการพัฒนาที่ยั่งยืน | ✓ |  |  |  |
-| [PLO4](../../CPE_RMUTT68_Prospectus.md#plo4): คิดวิเคราะห์อย่างเป็นระบบ สืบค้นและทดลองเพื่อพัฒนาระบบงานทางด้านวิศวกรรมคอมพิวเตอร์ได้อย่างเป็นขั้นตอน |  | ✓ |  |  |
+| [PLO4.1](../../CPE_RMUTT68_Prospectus.md#plo4-1): ระบุ กำหนด และวิเคราะห์ปัญหาทางวิศวกรรมคอมพิวเตอร์อย่างเป็นระบบ โดยค้นคว้าข้อมูลที่เกี่ยวข้อง เพื่อหาแนวทางแก้ไขเบื้องต้นได้ |  | ✓ |  |  |
 | [PLO5](../../CPE_RMUTT68_Prospectus.md#plo5): ใช้เครื่องมือทางด้านวิศวกรรมคอมพิวเตอร์ได้อย่างถูกต้องเหมาะสม |  | ✓ |  |  |
 | [PLO6](../../CPE_RMUTT68_Prospectus.md#plo6): อธิบายจรรยาบรรณวิชาชีพได้ มีความตรงต่อเวลา |  |  | ✓ |  |
 | [PLO7](../../CPE_RMUTT68_Prospectus.md#plo7): อธิบายและประยุกต์ใช้เทคโนโลยีทางวิศวกรรมคอมพิวเตอร์ที่ไม่เคยเรียนในหลักสูตรได้ |  |  |  | ✓ |
-| [PLO8](../../CPE_RMUTT68_Prospectus.md#plo8): ทำงานเป็นทีม วางแผนและบริหารจัดการงานที่ได้รับมอบหมาย สื่อสารความคืบหน้าและปัญหาได้ตรงประเด็น และเสนอแนวทางแก้ไขพร้อมเหตุผลรองรับได้ |  |  |  | ✓ |
+| [PLO8.1](../../CPE_RMUTT68_Prospectus.md#plo8-1): ทำงานเป็นทีมร่วมกับผู้อื่นที่มีความหลากหลายได้อย่างมีประสิทธิภาพ |  |  |  | ✓ |
+| [PLO8.2](../../CPE_RMUTT68_Prospectus.md#plo8-2): สื่อสารความคืบหน้าและปัญหาได้ตรงประเด็นทั้งภาษาไทยและภาษาอังกฤษ และเสนอแนวทางแก้ไขพร้อมเหตุผลรองรับได้ |  |  |  | ✓ |
 
 ---
 
@@ -65,11 +66,14 @@ prerequisites: [04-620-303]
 <th><a href="../../CPE_RMUTT68_Prospectus.md#plo1">PLO1</a></th>
 <th><a href="../../CPE_RMUTT68_Prospectus.md#plo2">PLO2</a></th>
 <th><a href="../../CPE_RMUTT68_Prospectus.md#plo3">PLO3</a></th>
-<th colspan="2"><a href="../../CPE_RMUTT68_Prospectus.md#plo4">PLO4</a></th>
+<th><a href="../../CPE_RMUTT68_Prospectus.md#plo4-1">PLO4.1</a></th>
+<th><a href="../../CPE_RMUTT68_Prospectus.md#plo4-2">PLO4.2</a></th>
 <th><a href="../../CPE_RMUTT68_Prospectus.md#plo5">PLO5</a></th>
 <th><a href="../../CPE_RMUTT68_Prospectus.md#plo6">PLO6</a></th>
 <th><a href="../../CPE_RMUTT68_Prospectus.md#plo7">PLO7</a></th>
-<th colspan="3"><a href="../../CPE_RMUTT68_Prospectus.md#plo8">PLO8</a></th>
+<th><a href="../../CPE_RMUTT68_Prospectus.md#plo8-1">PLO8.1</a></th>
+<th><a href="../../CPE_RMUTT68_Prospectus.md#plo8-2">PLO8.2</a></th>
+<th><a href="../../CPE_RMUTT68_Prospectus.md#plo8-3">PLO8.3</a></th>
 </tr>
 <tr>
 <th>TABEE PO</th>
@@ -177,9 +181,9 @@ prerequisites: [04-620-303]
 
 ตารางแสดงความสัมพันธ์ระหว่าง PLO ของรายวิชานี้กับ TABEE Program Outcomes (PO) ตาม Sydney Accord อ้างอิงจาก [CPE_RMUTT68_TABEE_PO_Mapping.md](../../CPE_RMUTT68_TABEE_PO_Mapping.md)
 
-| PLO ที่เกี่ยวข้อง | PLO1 | PLO4 | PLO2 | PLO4 | PLO5 | PLO8 | PLO8 | PLO3 | PLO6 | PLO8 | PLO7 |
+| PLO ที่เกี่ยวข้อง | PLO1 | PLO4.1 | PLO2 | PLO4.2 | PLO5 | PLO8.1 | PLO8.2 | PLO3 | PLO6 | PLO8.3 | PLO7 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| รายวิชา |  | ● |  | ● | ● | ● | ● | ● | ● | ● | ● |
+| รายวิชา |  | ● |  |  | ● | ● | ● | ● | ● |  | ● |
 | TABEE PO | PO1 | PO2 | PO3 | PO4 | PO5 | PO6 | PO7 | PO8 | PO9 | PO10 | PO11 |
 
 ---

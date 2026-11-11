@@ -6,7 +6,7 @@ credits: 3(3-0)
 type: กลุ่มวิชาเลือก
 year: N/A (elective)
 semester: N/A
-plos: PLO2, PLO3, PLO4, PLO7
+plos: PLO2, PLO3, PLO4.1, PLO7
 prerequisites: [04-621-301]
 ---
 
@@ -35,7 +35,7 @@ prerequisites: [04-621-301]
 | --- | --- | --- |
 | <a id="clo1"></a>CLO1 | สามารถอธิบายความหมายของสถาปัตยกรรมคอมพิวเตอร์ขั้นสูง | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2) |
 | <a id="clo2"></a>CLO2 | สามารถประยุกต์ใช้สถาปัตยกรรมคอมพิวเตอร์ขั้นสูง สำหรับเป็นแนวทางในการออกแบบระบบคอมพิวเตอร์ขั้นสูงได้เหมาะสม | [PLO3](../../../CPE_RMUTT68_Prospectus.md#plo3) |
-| <a id="clo3"></a>CLO3 | สามารถวิเคราะห์วิธีการแก้ปัญหาของสถาปัตยกรรมคอมพิวเตอร์ขั้นสูง | [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4) |
+| <a id="clo3"></a>CLO3 | สามารถวิเคราะห์วิธีการแก้ปัญหาของสถาปัตยกรรมคอมพิวเตอร์ขั้นสูง | [PLO4.1](../../../CPE_RMUTT68_Prospectus.md#plo4-1) |
 | <a id="clo4"></a>CLO4 | สามารถใช้สารสนเทศเพื่อการสืบค้นข้อมูลทางด้านสถาปัตยกรรมคอมพิวเตอร์ขั้นสูงได้ | [PLO7](../../../CPE_RMUTT68_Prospectus.md#plo7) |
 
 ---
@@ -46,7 +46,7 @@ prerequisites: [04-621-301]
 | --- | :---: | :---: | :---: | :---: |
 | [PLO2](../../../CPE_RMUTT68_Prospectus.md#plo2): ใช้ความรู้และทักษะ ในเชิงทฤษฎีและปฏิบัติ เพื่อแก้ไขปัญหาด้านวิศวกรรมคอมพิวเตอร์ได้ | ✓ |  |  |  |
 | [PLO3](../../../CPE_RMUTT68_Prospectus.md#plo3): บูรณาการความรู้ในสาขาวิศวกรรมคอมพิวเตอร์เพื่อแก้ไขปัญหาให้กับอุตสาหกรรมหรือชุมชน เพื่อการพัฒนาที่ยั่งยืน | ✓ |  |  |  |
-| [PLO4](../../../CPE_RMUTT68_Prospectus.md#plo4): คิดวิเคราะห์อย่างเป็นระบบ สืบค้นและทดลองเพื่อพัฒนาระบบงานทางด้านวิศวกรรมคอมพิวเตอร์ได้อย่างเป็นขั้นตอน |  | ✓ |  |  |
+| [PLO4.1](../../../CPE_RMUTT68_Prospectus.md#plo4-1): ระบุ กำหนด และวิเคราะห์ปัญหาทางวิศวกรรมคอมพิวเตอร์อย่างเป็นระบบ โดยค้นคว้าข้อมูลที่เกี่ยวข้อง เพื่อหาแนวทางแก้ไขเบื้องต้นได้ |  | ✓ |  |  |
 | [PLO7](../../../CPE_RMUTT68_Prospectus.md#plo7): อธิบายและประยุกต์ใช้เทคโนโลยีทางวิศวกรรมคอมพิวเตอร์ที่ไม่เคยเรียนในหลักสูตรได้ |  |  |  | ✓ |
 
 ---
@@ -61,11 +61,14 @@ prerequisites: [04-621-301]
 <th><a href="../../../CPE_RMUTT68_Prospectus.md#plo1">PLO1</a></th>
 <th><a href="../../../CPE_RMUTT68_Prospectus.md#plo2">PLO2</a></th>
 <th><a href="../../../CPE_RMUTT68_Prospectus.md#plo3">PLO3</a></th>
-<th colspan="2"><a href="../../../CPE_RMUTT68_Prospectus.md#plo4">PLO4</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo4-1">PLO4.1</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo4-2">PLO4.2</a></th>
 <th><a href="../../../CPE_RMUTT68_Prospectus.md#plo5">PLO5</a></th>
 <th><a href="../../../CPE_RMUTT68_Prospectus.md#plo6">PLO6</a></th>
 <th><a href="../../../CPE_RMUTT68_Prospectus.md#plo7">PLO7</a></th>
-<th colspan="3"><a href="../../../CPE_RMUTT68_Prospectus.md#plo8">PLO8</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo8-1">PLO8.1</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo8-2">PLO8.2</a></th>
+<th><a href="../../../CPE_RMUTT68_Prospectus.md#plo8-3">PLO8.3</a></th>
 </tr>
 <tr>
 <th>TABEE PO</th>
@@ -145,9 +148,9 @@ prerequisites: [04-621-301]
 
 ตารางแสดงความสัมพันธ์ระหว่าง PLO ของรายวิชานี้กับ TABEE Program Outcomes (PO) ตาม Sydney Accord อ้างอิงจาก [CPE_RMUTT68_TABEE_PO_Mapping.md](../../CPE_RMUTT68_TABEE_PO_Mapping.md)
 
-| PLO ที่เกี่ยวข้อง | PLO1 | PLO4 | PLO2 | PLO4 | PLO5 | PLO8 | PLO8 | PLO3 | PLO6 | PLO8 | PLO7 |
+| PLO ที่เกี่ยวข้อง | PLO1 | PLO4.1 | PLO2 | PLO4.2 | PLO5 | PLO8.1 | PLO8.2 | PLO3 | PLO6 | PLO8.3 | PLO7 |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| รายวิชา |  | ● | ● | ● |  |  |  | ● |  |  | ● |
+| รายวิชา |  | ● | ● |  |  |  |  | ● |  |  | ● |
 | TABEE PO | PO1 | PO2 | PO3 | PO4 | PO5 | PO6 | PO7 | PO8 | PO9 | PO10 | PO11 |
 
 ---
